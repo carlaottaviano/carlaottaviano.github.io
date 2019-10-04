@@ -54,16 +54,29 @@
             <header class="sticky-top container-fluid">
                 <div class="row">
                     <div class="offset-1 col-10">
-                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="https://carlaottaviano.github.io/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
-                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/company/company.html">Empresa</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="nav-item nav-link active" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="http://localhost:3000/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
+                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link" href="http://localhost:3000/app/home/index.html">Home</a><a class="nav-item nav-link" href="http://localhost:3000/app/company/company.html">Empresa</a><a class="nav-item nav-link" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="nav-item nav-link" href="http://localhost:3000/app/products/products.html">Productos</a><a class="nav-item nav-link active" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="nav-item nav-link" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                 <hr class="d-none d-md-block">
-                                <button class="btn btn-primary btn--icon" type="submit"> <i data-feather="users"></i>Acceso a clientes</button>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary btn--icon dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="users"></i>Login<i data-feather="chevron-down"></i></button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button class="dropdown-item" type="button">Acceso a clientes</button>
+                                        <button class="dropdown-item" type="button">Acceso a distribuidores</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="btn-group menu__btn--hamburger d-xl-none">
                                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="menu"></i></button>
-                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/brands/brands.html">Empresa</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="dropdown-item active" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="http://localhost:3000/app/home/index.html">Home</a><a class="dropdown-item" href="http://localhost:3000/app/brands/brands.html">Empresa</a><a class="dropdown-item" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="dropdown-item" href="http://localhost:3000/app/products/products.html">Productos</a><a class="dropdown-item active" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="dropdown-item" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="dropdown-item" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                     <div class="dropdown-divider"></div>
-                                    <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                    <div class="d-flex djustify-content-center flex-column">
+                                        <div>
+                                            <button class="btn btn-primary btn--icon mb-4 mx-auto" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a distribuidores</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </nav>
@@ -75,7 +88,7 @@
                     <div class="offset-1 col-10">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="https://carlaottaviano.github.io/app/home/index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="http://localhost:3000/app/home/index.html">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Servicios</li>
                             </ol>
                         </nav>
@@ -93,7 +106,12 @@
                 </div>
                 <div class="row">
                     <div class="offset-1 col-10 col-lg-5 col-xl-4 mb-7 mb-lg-0">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel slide" id="carouselServices" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#carouselServices" data-slide-to="0"></li>
+                                <li data-target="#carouselServices" data-slide-to="1"></li>
+                                <li data-target="#carouselServices" data-slide-to="2"></li>
+                            </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="cnt__image"><img src="../../assets/images/slider.png" alt="Hausnet S.R.L"></div>
@@ -104,7 +122,7 @@
                                 <div class="carousel-item">
                                     <div class="cnt__image"><img src="../../assets/images/slider.png" alt="Hausnet S.R.L"></div>
                                 </div>
-                            </div>
+                            </div><a class="carousel-control-prev" href="#carouselServices" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselServices" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
                         </div>
                     </div>
                     <div class="offset-1 col-10 offset-lg-0 col-lg-5 offset-xl-1 col-xl-5">
@@ -152,16 +170,16 @@
                             <button class="close" type="button" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <div class="toast-body">
-                            <p>Su formulario de envio de equipos ha sido enviado con éxito. A la brevedad nos comunicaremos.</p>
+                            <p>Su formulario de envío de equipos ha sido enviado con éxito. A la brevedad nos comunicaremos. Deberá tener en cuenta que el completar el formulario no es suficiente para aprobar la recepción del equipo. Una vez aprobada la recepción del mismo, recibirá un e-mail con el número de ticket y la etiqueta que deberá imprimir y pegar en la caja.</p>
                         </div>
                     </div>
                     <div class="toast toast--danger show" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header"><i class="mr-6" data-feather="slash"></i>
-                            <h4>¡Oops!</h4>
+                            <h4>¡Ups!</h4>
                             <button class="close" type="button" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <div class="toast-body">
-                            <p>Su formulario de envio de equipos no ha sido enviado correctamente. Intente nuevamente!</p>
+                            <p>Su formulario de envío de equipos no ha sido enviado correctamente. Intente nuevamente!</p>
                         </div>
                     </div>
                 </div>
@@ -169,12 +187,12 @@
             <section class="container-fluid section__contact bg-primary">
                 <div class="row">
                     <div class="offset-1 col-10 d-flex justify-content-between align-items-center flex-column flex-md-row">
-                        <p class="mb-5 mb-md-0 text-center text-md-left">Le brindamos el asesoramiento adecuado</p><a class="btn btn-secondary btn--icon" role="button" href="https://carlaottaviano.github.io/app/contact/contact.html"> <i data-feather="mail"></i>Contactanos</a>
+                        <p class="mb-5 mb-md-0 text-center text-md-left">Le brindamos el asesoramiento adecuado</p><a class="btn btn-secondary btn--icon" role="button" href="http://localhost:3000/app/contact/contact.html"> <i data-feather="mail"></i>Contáctenos</a>
                     </div>
                 </div>
             </section>
             <div class="modal fade" id="modalServices" tabindex="-1" role="dialog" aria-labelledby="modalServicesLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h2 class="modal-title" id="modalServicesLabel">Formulario de envío de equipos</h2>
@@ -217,6 +235,52 @@
                                         <input class="form-control" type="text" placeholder="Número de serie">
                                     </div>
                                 </div>
+                                <h5 class="pt-6">Accesorios adicionales</h5>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="checkitem1">
+                                                <label class="custom-control-label" for="checkitem1">Cargador / Fuente</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="checkitem2">
+                                                <label class="custom-control-label" for="checkitem2">Cable de alimentación</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="checkitem3">
+                                                <label class="custom-control-label" for="checkitem3">Valija/estuche de Transporte</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="checkitem4">
+                                                <label class="custom-control-label" for="checkitem4">Accesorio de calibración</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="checkitem5">
+                                                <label class="custom-control-label" for="checkitem5">Cable USB / Datos</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="checkitem6">
+                                                <label class="custom-control-label" for="checkitem6">No se envían accesorios adicionales</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Otro (especificar)">
+                                </div>
                             </form>
                         </div>
                         <div class="modal-footer d-flex justify-content-center">
@@ -247,15 +311,15 @@
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Links de interés</h3>
                         <ul>
-                            <li><a href="https://carlaottaviano.github.io/app/faq/faq.html">Preguntas frecuentes</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/jobs/jobs.html">Trabajá con nosotros</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/products/products.html">Productos</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a></li>
+                            <li><a href="http://localhost:3000/app/faq/faq.html">Preguntas frecuentes</a></li>
+                            <li><a href="http://localhost:3000/app/jobs/jobs.html">Trabajá con nosotros</a></li>
+                            <li><a href="http://localhost:3000/app/products/products.html">Productos</a></li>
+                            <li><a href="http://localhost:3000/app/services/services.html">Servicios</a></li>
                         </ul>
                     </div>
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Newsletter</h3>
-                        <p>Suscribite a nuestro newsletter y entérate de todas las novedades. No vamos a compartir tu email.</p>
+                        <p>Suscríbase a nuestro newsletter y entérese de todas las novedades. No vamos a compartir su email.</p>
                         <div class="input-group mb-3">
                             <input class="form-control" type="text" placeholder="Ingresá tu email" aria-label="Ingresá tu email" aria-describedby="button-addon">
                             <div class="input-group-append">

@@ -54,16 +54,29 @@
             <header class="sticky-top container-fluid">
                 <div class="row">
                     <div class="offset-1 col-10">
-                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="https://carlaottaviano.github.io/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
-                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link active" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/company/company.html">Empresa</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="http://localhost:3000/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
+                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link active" href="http://localhost:3000/app/home/index.html">Home</a><a class="nav-item nav-link" href="http://localhost:3000/app/company/company.html">Empresa</a><a class="nav-item nav-link" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="nav-item nav-link" href="http://localhost:3000/app/products/products.html">Productos</a><a class="nav-item nav-link" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="nav-item nav-link" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                 <hr class="d-none d-md-block">
-                                <button class="btn btn-primary btn--icon" type="submit"> <i data-feather="users"></i>Acceso a clientes</button>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary btn--icon dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="users"></i>Login<i data-feather="chevron-down"></i></button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button class="dropdown-item" type="button">Acceso a clientes</button>
+                                        <button class="dropdown-item" type="button">Acceso a distribuidores</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="btn-group menu__btn--hamburger d-xl-none">
                                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="menu"></i></button>
-                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item active" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/brands/brands.html">Empresa</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item active" href="http://localhost:3000/app/home/index.html">Home</a><a class="dropdown-item" href="http://localhost:3000/app/brands/brands.html">Empresa</a><a class="dropdown-item" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="dropdown-item" href="http://localhost:3000/app/products/products.html">Productos</a><a class="dropdown-item" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="dropdown-item" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="dropdown-item" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                     <div class="dropdown-divider"></div>
-                                    <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                    <div class="d-flex djustify-content-center flex-column">
+                                        <div>
+                                            <button class="btn btn-primary btn--icon mb-4 mx-auto" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a distribuidores</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </nav>
@@ -81,70 +94,105 @@
                         <div class="carousel-item carousel-item__bg--1 active">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1>HAUSNET S.R.L. </h1>
-                                <p>Especialistas en Instrumentación y Automatización Industrial.</p><a class="btn btn-primary mb-9" role="button" href="https://carlaottaviano.github.io/app/products/products.html">Ver productos</a>
+                                <p>Especialistas en Instrumentación y Automatización Industrial.</p><a class="btn btn-primary mb-9" role="button" href="http://localhost:3000/app/products/products.html">Ver productos</a>
                             </div>
                         </div>
                         <div class="carousel-item carousel-item__bg--2">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1>HAUSNET S.R.L. 2</h1>
-                                <p>Especialistas en Instrumentación y Automatización Industrial.</p><a class="btn btn-primary mb-9" role="button" href="https://carlaottaviano.github.io/app/products/products.html">Ver productos</a>
+                                <p>Especialistas en Instrumentación y Automatización Industrial.</p><a class="btn btn-primary mb-9" role="button" href="http://localhost:3000/app/products/products.html">Ver productos</a>
                             </div>
                         </div>
                         <div class="carousel-item carousel-item__bg--3">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1>HAUSNET S.R.L. 3</h1>
-                                <p>Especialistas en Instrumentación y Automatización Industrial.</p><a class="btn btn-primary mb-9" role="button" href="https://carlaottaviano.github.io/app/products/products.html">Ver productos</a>
+                                <p>Especialistas en Instrumentación y Automatización Industrial.</p><a class="btn btn-primary mb-9" role="button" href="http://localhost:3000/app/products/products.html">Ver productos</a>
                             </div>
                         </div><a class="carousel-control-prev" href="#carouselCover" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Anterior</span></a><a class="carousel-control-next" href="#carouselCover" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Siguiente</span></a>
                     </div>
                 </div>
             </section>
-            <section class="container-fluid section__contact bg-primary">
+            <section class="container-fluid section__newsletter bg-primary">
                 <div class="row">
-                    <div class="offset-1 col-10 d-flex justify-content-between align-items-center flex-column flex-md-row">
-                        <p class="mb-5 mb-md-0 text-center text-md-left">Le brindamos el asesoramiento adecuado</p><a class="btn btn-secondary btn--icon" role="button" href="https://carlaottaviano.github.io/app/contact/contact.html"> <i data-feather="mail"></i>Contactanos</a>
+                    <div class="offset-1 col-10">
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-flex align-items-center">
+                                <p class="mb-5 mb-md-0 text-center text-md-left">Suscríbase a nuestro newsletter</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Ingresá tu email" aria-label="Ingresá tu email" aria-describedby="button-addon">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary" type="button" id="button-addon">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="container-fluid section__brands">
                 <div class="row">
                     <div class="offset-1 col-10 d-flex justify-content-between flex-column flex-sm-row">
-                        <h2>Empresas Representadas</h2>
-                        <div class="mb-7"><a class="btn btn-primary" role="button" href="https://carlaottaviano.github.io/app/brands/brands.html">Ver más</a></div>
+                        <h2>Industrias</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="offset-1 col-10">
                         <div class="row">
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/brands/brands.html">
-                                    <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="http://localhost:3000/app/products/products.html">
+                                    <div class="card card--industry">
+                                        <div class="card-body d-flex justify-content-center align-items-center p-0"><img class="img-fluid image--grayscale" src="../../assets/images/industrias/alimenticia.jpg" alt="Industria alimenticia"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Alimenticia</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/brands/brands.html">
-                                    <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="http://localhost:3000/app/products/products.html">
+                                    <div class="card card--industry">
+                                        <div class="card-body d-flex justify-content-center align-items-center p-0"><img class="img-fluid image--grayscale" src="../../assets/images/industrias/bebidas.jpg" alt="Industria bebidas"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Industria bebidas</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/brands/brands.html">
-                                    <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="http://localhost:3000/app/products/products.html">
+                                    <div class="card card--industry">
+                                        <div class="card-body d-flex justify-content-center align-items-center p-0"><img class="img-fluid image--grayscale" src="../../assets/images/industrias/oil-and-gas.jpg" alt="Industria Oil &amp; Gas"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Oil & Gas</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-lg-none d-xl-block"><a href="https://carlaottaviano.github.io/app/brands/brands.html">
-                                    <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="http://localhost:3000/app/products/products.html">
+                                    <div class="card card--industry">
+                                        <div class="card-body d-flex justify-content-center align-items-center p-0"><img class="img-fluid image--grayscale" src="../../assets/images/industrias/quimica.jpg" alt="Industria Química"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Química</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="http://localhost:3000/app/products/products.html">
+                                    <div class="card card--industry">
+                                        <div class="card-body d-flex justify-content-center align-items-center p-0"><img class="img-fluid image--grayscale" src="../../assets/images/industrias/mineria.jpg" alt="Industria Minería"></div>
+                                        <div class="card-footer">
+                                            <p class="text-gray mb-0">Minería</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="http://localhost:3000/app/products/products.html">
+                                    <div class="card card--industry">
+                                        <div class="card-body d-flex justify-content-center align-items-center p-0"><img class="img-fluid image--grayscale" src="../../assets/images/industrias/laboratorio.jpg" alt="Industria Laboratorio"></div>
+                                        <div class="card-footer">
+                                            <p class="text-gray mb-0">Laboratorio</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="http://localhost:3000/app/products/products.html">
+                                    <div class="card card--industry">
+                                        <div class="card-body d-flex justify-content-center align-items-center p-0"><img class="img-fluid image--grayscale" src="../../assets/images/industrias/siderurgica.jpg" alt="Industria Siderúrgica"></div>
+                                        <div class="card-footer">
+                                            <p class="text-gray mb-0">Siderúrgica</p>
                                         </div>
                                     </div>
                                 </a></div>
@@ -154,13 +202,15 @@
             </section>
             <section class="container-fluid section__products bg-light">
                 <div class="row">
-                    <div class="offset-1 col-xl-2 col-lg-3 col-md-10">
+                    <div class="offset-1 col-10 d-flex justify-content-between flex-column flex-sm-row">
                         <h2>Productos destacados</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p><a class="btn btn-primary mb-7" role="button" href="https://carlaottaviano.github.io/app/products/products.html">Ver más</a>
+                        <div class="mb-7"><a class="btn btn-primary" role="button" href="http://localhost:3000/app/products/products.html">Ver más</a></div>
                     </div>
-                    <div class="col-xl-8 col-lg-7 col-md-10 offset-md-1 offset-lg-0 offset-1 col-10">
+                </div>
+                <div class="row">
+                    <div class="offset-1 col-10">
                         <div class="row">
-                            <div class="col-12 col-md-6 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-3"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -172,7 +222,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-3"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -184,7 +234,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-6 col-xl-4 d-lg-none d-xl-block"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-3"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -196,7 +246,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 d-md-block d-lg-none"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-3"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -220,7 +270,24 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="offset-1 col-10 col-lg-3 col-xl-4 mb-7">
-                        <div class="cnt__image"><img src="../../assets/images/slider.png" alt="Hausnet S.R.L"></div>
+                        <div class="carousel slide" id="carouselServices" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#carouselServices" data-slide-to="0"></li>
+                                <li data-target="#carouselServices" data-slide-to="1"></li>
+                                <li data-target="#carouselServices" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="cnt__image"><img src="../../assets/images/slider.png" alt="Hausnet S.R.L"></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="cnt__image"><img src="../../assets/images/slider.png" alt="Hausnet S.R.L"></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="cnt__image"><img src="../../assets/images/slider.png" alt="Hausnet S.R.L"></div>
+                                </div>
+                            </div><a class="carousel-control-prev" href="#carouselServices" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselServices" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                        </div>
                     </div>
                     <div class="offset-1 col-10 offset-lg-0 col-lg-7 col-xl-6">
                         <div class="row">
@@ -284,7 +351,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 d-flex align-items-center justify-content-center"><a class="btn btn-primary mb-9" role="button" href="https://carlaottaviano.github.io/app/services/services.html">Ver más</a></div>
+                            <div class="col-md-6 d-flex align-items-center justify-content-center"><a class="btn btn-primary mb-9" role="button" href="http://localhost:3000/app/services/services.html">Ver más</a></div>
                         </div>
                     </div>
                 </div>
@@ -310,15 +377,15 @@
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Links de interés</h3>
                         <ul>
-                            <li><a href="https://carlaottaviano.github.io/app/faq/faq.html">Preguntas frecuentes</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/jobs/jobs.html">Trabajá con nosotros</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/products/products.html">Productos</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a></li>
+                            <li><a href="http://localhost:3000/app/faq/faq.html">Preguntas frecuentes</a></li>
+                            <li><a href="http://localhost:3000/app/jobs/jobs.html">Trabajá con nosotros</a></li>
+                            <li><a href="http://localhost:3000/app/products/products.html">Productos</a></li>
+                            <li><a href="http://localhost:3000/app/services/services.html">Servicios</a></li>
                         </ul>
                     </div>
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Newsletter</h3>
-                        <p>Suscribite a nuestro newsletter y entérate de todas las novedades. No vamos a compartir tu email.</p>
+                        <p>Suscríbase a nuestro newsletter y entérese de todas las novedades. No vamos a compartir su email.</p>
                         <div class="input-group mb-3">
                             <input class="form-control" type="text" placeholder="Ingresá tu email" aria-label="Ingresá tu email" aria-describedby="button-addon">
                             <div class="input-group-append">

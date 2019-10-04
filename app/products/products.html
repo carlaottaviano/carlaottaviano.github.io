@@ -54,16 +54,29 @@
             <header class="sticky-top container-fluid">
                 <div class="row">
                     <div class="offset-1 col-10">
-                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="https://carlaottaviano.github.io/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
-                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/company/company.html">Empresa</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="nav-item nav-link active" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="http://localhost:3000/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
+                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link" href="http://localhost:3000/app/home/index.html">Home</a><a class="nav-item nav-link" href="http://localhost:3000/app/company/company.html">Empresa</a><a class="nav-item nav-link" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="nav-item nav-link active" href="http://localhost:3000/app/products/products.html">Productos</a><a class="nav-item nav-link" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="nav-item nav-link" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                 <hr class="d-none d-md-block">
-                                <button class="btn btn-primary btn--icon" type="submit"> <i data-feather="users"></i>Acceso a clientes</button>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary btn--icon dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="users"></i>Login<i data-feather="chevron-down"></i></button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button class="dropdown-item" type="button">Acceso a clientes</button>
+                                        <button class="dropdown-item" type="button">Acceso a distribuidores</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="btn-group menu__btn--hamburger d-xl-none">
                                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="menu"></i></button>
-                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/brands/brands.html">Empresa</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="dropdown-item active" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="http://localhost:3000/app/home/index.html">Home</a><a class="dropdown-item" href="http://localhost:3000/app/brands/brands.html">Empresa</a><a class="dropdown-item" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="dropdown-item active" href="http://localhost:3000/app/products/products.html">Productos</a><a class="dropdown-item" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="dropdown-item" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="dropdown-item" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                     <div class="dropdown-divider"></div>
-                                    <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                    <div class="d-flex djustify-content-center flex-column">
+                                        <div>
+                                            <button class="btn btn-primary btn--icon mb-4 mx-auto" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a distribuidores</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </nav>
@@ -71,12 +84,11 @@
                 </div>
             </header>
             <section class="container-fluid">
-                <div class="row breadcrumb__bg"></div>
                 <div class="row">
                     <div class="offset-1 col-10">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="https://carlaottaviano.github.io/app/home/index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="http://localhost:3000/app/home/index.html">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Productos</li>
                             </ol>
                         </nav>
@@ -94,78 +106,91 @@
                     <div class="offset-1 col-10 col-md-4 col-lg-3">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="https://carlaottaviano.github.io/app/products/products.html">Productos</a></li>
-                                <li class="breadcrumb-item"> <a href="https://carlaottaviano.github.io/app/products/products.html">Analítica de gases</a></li>
+                                <li class="breadcrumb-item"><a href="http://localhost:3000/app/products/products.html">Productos</a></li>
+                                <li class="breadcrumb-item"> <a href="http://localhost:3000/app/products/products.html">Analítica de gases</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Oil & Gas</li>
                             </ol>
                         </nav>
-                        <h2>Oil & Gas</h2>
+                        <h2 class="h2__filters">Oil & Gas</h2>
                         <p class="text-muted">6 resultados</p>
-                        <div class="d-none d-md-block">
-                            <h3>Industrias</h3>
-                            <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Analítica de gases</Cras><span>(14)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Analítica de Líquidos y Procesos</Cras><span>(7)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Caudal, Nivel, Presión, Humedad y Pesaje</Cras><span>(11)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Detectores Gases y Protección Personal</Cras><span>(8)</span>
-                                </a></div>
-                            <h3>Categorías</h3>
-                            <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Analítica de gases</Cras><span>(14)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Analítica de Líquidos y Procesos</Cras><span>(7)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Caudal, Nivel, Presión, Humedad y Pesaje</Cras><span>(11)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Detectores Gases y Protección Personal</Cras><span>(8)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Oil & Gas</Cras><span>(6)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Alimenticia</Cras><span>(12)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Pulpa y Papel</Cras><span>(6)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Minería y Agregados</Cras><span>(9)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Laboratorios Analíticos</Cras><span>(6)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Calidad de Aguas, Hidrología y Meteorología</Cras><span>(9)</span>
-                                </a></div>
-                            <h3>Representadas</h3>
-                            <div class="list-group filters__list">
-                                <div class="list-group-item">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" id="checkFilter1" type="checkbox">
-                                            <label class="custom-control-label" for="checkFilter1">Elridge Products Inc.</label>
-                                        </div>
+                        <h2 class="mb-0">Filtrar por:</h2>
+                        <div class="accordion accordion__filters d-none d-md-block" id="accordionFilters">
+                            <div class="card mb-0">
+                                <div class="card-header collapsed d-inline-flex px-0" data-toggle="collapse" data-target="#faqOne" aria-expanded="true" aria-controls="filterOne"><i class="text-primary mr-4" data-feather="plus"></i><i class="text-primary mr-4" data-feather="minus"></i>
+                                    <h3 class="text-dark mb-0">Industria</h3>
+                                </div>
+                                <div class="collapse" id="faqOne" aria-labelledby="headingOne" data-parent="#accordionFilters">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote">
+                                            <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Analítica de gases<span>(14)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Analítica de Líquidos y Procesos<span>(7)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Caudal, Nivel, Presión, Humedad y Pesaje<span>(11)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Detectores Gases y Protección Personal<span>(8)</span></a></div>
+                                        </blockquote>
                                     </div>
                                 </div>
-                                <div class="list-group-item">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" id="checkFilter2" type="checkbox">
-                                            <label class="custom-control-label" for="checkFilter2">A+ Corporation</label>
-                                        </div>
+                            </div>
+                            <div class="card mb-0">
+                                <div class="card-header collapsed d-inline-flex px-0" data-toggle="collapse" data-target="#filterTwo" aria-expanded="true" aria-controls="filterTwo"><i class="text-primary mr-4" data-feather="plus"></i><i class="text-primary mr-4" data-feather="minus"></i>
+                                    <h3 class="text-dark mb-0">Categoría</h3>
+                                </div>
+                                <div class="collapse" id="filterTwo" aria-labelledby="headingTwo" data-parent="#accordionFilters">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote">
+                                            <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Analítica de gases<span>(14)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Analítica de Líquidos y Procesos<span>(7)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Caudal, Nivel, Presión, Humedad y Pesaje<span>(11)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Detectores Gases y Protección Personal<span>(8)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Oil & Gas<span>(6)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Alimenticia<span>(12)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Pulpa y Papel<span>(6)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Minería y Agregados<span>(9)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Laboratorios Analíticos<span>(6)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Calidad de Aguas, Hidrología y Meteorología<span>(9)</span></a></div>
+                                        </blockquote>
                                     </div>
                                 </div>
-                                <div class="list-group-item">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" id="checkFilter3" type="checkbox">
-                                            <label class="custom-control-label" for="checkFilter3">Ascorel</label>
-                                        </div>
+                            </div>
+                            <div class="card mb-0">
+                                <div class="card-header collapsed d-inline-flex px-0" data-toggle="collapse" data-target="#filterThree" aria-expanded="true" aria-controls="filterThree"><i class="text-primary mr-4" data-feather="plus"></i><i class="text-primary mr-4" data-feather="minus"></i>
+                                    <h3 class="text-dark mb-0">Aplicación</h3>
+                                </div>
+                                <div class="collapse" id="filterThree" aria-labelledby="headingThree" data-parent="#accordionFilters">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote">
+                                            <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Medición de humedad y punto de rocio<span>(14)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Detección de gases<span>(7)</span></a></div>
+                                        </blockquote>
                                     </div>
                                 </div>
-                                <div class="list-group-item">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" id="checkFilter4" type="checkbox">
-                                            <label class="custom-control-label" for="checkFilter4">Cerex Monitoring Solutions, LLC</label>
-                                        </div>
+                            </div>
+                            <div class="card mb-0">
+                                <div class="card-header collapsed d-inline-flex px-0" data-toggle="collapse" data-target="#filterFour" aria-expanded="true" aria-controls="filterFour"><i class="text-primary mr-4" data-feather="plus"></i><i class="text-primary mr-4" data-feather="minus"></i>
+                                    <h3 class="text-dark mb-0">Representada</h3>
+                                </div>
+                                <div class="collapse" id="filterFour" aria-labelledby="headingFive" data-parent="#accordionFilters">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote">
+                                            <div class="list-group-item">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="checkFilter1" type="checkbox">
+                                                        <label class="custom-control-label" for="checkFilter1">Elridge Products Inc.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="checkFilter2" type="checkbox">
+                                                        <label class="custom-control-label" for="checkFilter2">A+ Corporation</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="checkFilter3" type="checkbox">
+                                                        <label class="custom-control-label" for="checkFilter3">Ascorel</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="checkFilter4" type="checkbox">
+                                                        <label class="custom-control-label" for="checkFilter4">Cerex Monitoring Solutions, LLC</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </blockquote>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +198,7 @@
                     </div>
                     <div class="offset-1 col-10 offset-md-0 col-sm-10 col-md-6 col-lg-7">
                         <div class="row">
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -185,7 +210,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -197,7 +222,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -209,7 +234,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -221,7 +246,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -233,7 +258,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -245,7 +270,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -257,7 +282,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -269,7 +294,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -281,7 +306,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -293,7 +318,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -305,7 +330,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="https://carlaottaviano.github.io/app/products/products-detail.html">
+                            <div class="col-12 col-md-12 col-lg-6 col-xl-4"><a href="http://localhost:3000/app/products/products-detail.html">
                                     <div class="card card--product">
                                         <div class="card-body d-flex justify-content-center align-items-center"><img class="img-fluid" src="../../assets/images/product.png" alt="Hausnet S.R.L" /></div>
                                         <div class="card-footer">
@@ -337,7 +362,7 @@
             <section class="container-fluid section__contact bg-primary">
                 <div class="row">
                     <div class="offset-1 col-10 d-flex justify-content-between align-items-center flex-column flex-md-row">
-                        <p class="mb-5 mb-md-0 text-center text-md-left">Le brindamos el asesoramiento adecuado</p><a class="btn btn-secondary btn--icon" role="button" href="https://carlaottaviano.github.io/app/contact/contact.html"> <i data-feather="mail"></i>Contactanos</a>
+                        <p class="mb-5 mb-md-0 text-center text-md-left">Le brindamos el asesoramiento adecuado</p><a class="btn btn-secondary btn--icon" role="button" href="http://localhost:3000/app/contact/contact.html"> <i data-feather="mail"></i>Contáctenos</a>
                     </div>
                 </div>
             </section>
@@ -349,69 +374,83 @@
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <div class="modal-body">
-                            <h3>Industrias</h3>
-                            <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Analítica de gases</Cras><span>(14)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Analítica de Líquidos y Procesos</Cras><span>(7)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Caudal, Nivel, Presión, Humedad y Pesaje</Cras><span>(11)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Detectores Gases y Protección Personal</Cras><span>(8)</span>
-                                </a></div>
-                            <h3>Categorías</h3>
-                            <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Analítica de gases</Cras><span>(14)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Analítica de Líquidos y Procesos</Cras><span>(7)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Caudal, Nivel, Presión, Humedad y Pesaje</Cras><span>(11)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Detectores Gases y Protección Personal</Cras><span>(8)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Oil & Gas</Cras><span>(6)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Alimenticia</Cras><span>(12)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Pulpa y Papel</Cras><span>(6)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Minería y Agregados</Cras><span>(9)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Laboratorios Analíticos</Cras><span>(6)</span>
-                                </a><a class="list-group-item list-group-item-action" href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <Cras>Calidad de Aguas, Hidrología y Meteorología</Cras><span>(9)</span>
-                                </a></div>
-                            <h3>Representadas</h3>
-                            <div class="list-group filters__list">
-                                <div class="list-group-item">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" id="checkFilter1" type="checkbox">
-                                            <label class="custom-control-label" for="checkFilter1">Elridge Products Inc.</label>
+                            <div class="accordion accordion__filters" id="accordionFiltersModal">
+                                <div class="card mb-0">
+                                    <div class="card-header collapsed d-inline-flex px-0" data-toggle="collapse" data-target="#filterOneModal" aria-expanded="true" aria-controls="filterOneModal"><i class="text-primary mr-4" data-feather="plus"></i><i class="text-primary mr-4" data-feather="minus"></i>
+                                        <h3 class="text-dark mb-0">Industria</h3>
+                                    </div>
+                                    <div class="collapse" id="filterOneModal" aria-labelledby="headingOne" data-parent="#accordionFiltersModal">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote">
+                                                <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Analítica de gases<span>(14)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Analítica de Líquidos y Procesos<span>(7)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Caudal, Nivel, Presión, Humedad y Pesaje<span>(11)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Detectores Gases y Protección Personal<span>(8)</span></a></div>
+                                            </blockquote>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="list-group-item">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" id="checkFilter2" type="checkbox">
-                                            <label class="custom-control-label" for="checkFilter2">A+ Corporation</label>
+                                <div class="card mb-0">
+                                    <div class="card-header collapsed d-inline-flex px-0" data-toggle="collapse" data-target="#filterTwoModal" aria-expanded="true" aria-controls="filterTwoModal"><i class="text-primary mr-4" data-feather="plus"></i><i class="text-primary mr-4" data-feather="minus"></i>
+                                        <h3 class="text-dark mb-0">Categoría</h3>
+                                    </div>
+                                    <div class="collapse" id="filterTwoModal" aria-labelledby="headingTwo" data-parent="#accordionFiltersModal">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote">
+                                                <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Analítica de gases<span>(14)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Analítica de Líquidos y Procesos<span>(7)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Caudal, Nivel, Presión, Humedad y Pesaje<span>(11)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Detectores Gases y Protección Personal<span>(8)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Oil & Gas<span>(6)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Alimenticia<span>(12)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Pulpa y Papel<span>(6)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Minería y Agregados<span>(9)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Laboratorios Analíticos<span>(6)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Calidad de Aguas, Hidrología y Meteorología<span>(9)</span></a></div>
+                                            </blockquote>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="list-group-item">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" id="checkFilter3" type="checkbox">
-                                            <label class="custom-control-label" for="checkFilter3">Ascorel</label>
+                                <div class="card mb-0">
+                                    <div class="card-header collapsed d-inline-flex px-0" data-toggle="collapse" data-target="#filterThreeModal" aria-expanded="true" aria-controls="filterThreeModal"><i class="text-primary mr-4" data-feather="plus"></i><i class="text-primary mr-4" data-feather="minus"></i>
+                                        <h3 class="text-dark mb-0">Aplicación</h3>
+                                    </div>
+                                    <div class="collapse" id="filterThreeModal" aria-labelledby="headingThree" data-parent="#accordionFiltersModal">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote">
+                                                <div class="list-group filters__list"><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Medición de humedad y punto de rocio<span>(14)</span></a><a class="list-group-item list-group-item-action" href="http://localhost:3000/app/products/products.html">Detección de gases<span>(7)</span></a></div>
+                                            </blockquote>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="list-group-item">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" id="checkFilter4" type="checkbox">
-                                            <label class="custom-control-label" for="checkFilter4">Cerex Monitoring Solutions, LLC</label>
+                                <div class="card mb-0">
+                                    <div class="card-header collapsed d-inline-flex px-0" data-toggle="collapse" data-target="#filterFourModal" aria-expanded="true" aria-controls="filterFourModal"><i class="text-primary mr-4" data-feather="plus"></i><i class="text-primary mr-4" data-feather="minus"></i>
+                                        <h3 class="text-dark mb-0">Representada</h3>
+                                    </div>
+                                    <div class="collapse" id="filterFourModal" aria-labelledby="headingFive" data-parent="#accordionFiltersModal">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote">
+                                                <div class="list-group-item">
+                                                    <div class="form-group">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" id="checkFilter1" type="checkbox">
+                                                            <label class="custom-control-label" for="checkFilter1">Elridge Products Inc.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="form-group">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" id="checkFilter2" type="checkbox">
+                                                            <label class="custom-control-label" for="checkFilter2">A+ Corporation</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="form-group">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" id="checkFilter3" type="checkbox">
+                                                            <label class="custom-control-label" for="checkFilter3">Ascorel</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="form-group">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" id="checkFilter4" type="checkbox">
+                                                            <label class="custom-control-label" for="checkFilter4">Cerex Monitoring Solutions, LLC</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
                                         </div>
                                     </div>
                                 </div>
@@ -445,15 +484,15 @@
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Links de interés</h3>
                         <ul>
-                            <li><a href="https://carlaottaviano.github.io/app/faq/faq.html">Preguntas frecuentes</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/jobs/jobs.html">Trabajá con nosotros</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/products/products.html">Productos</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a></li>
+                            <li><a href="http://localhost:3000/app/faq/faq.html">Preguntas frecuentes</a></li>
+                            <li><a href="http://localhost:3000/app/jobs/jobs.html">Trabajá con nosotros</a></li>
+                            <li><a href="http://localhost:3000/app/products/products.html">Productos</a></li>
+                            <li><a href="http://localhost:3000/app/services/services.html">Servicios</a></li>
                         </ul>
                     </div>
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Newsletter</h3>
-                        <p>Suscribite a nuestro newsletter y entérate de todas las novedades. No vamos a compartir tu email.</p>
+                        <p>Suscríbase a nuestro newsletter y entérese de todas las novedades. No vamos a compartir su email.</p>
                         <div class="input-group mb-3">
                             <input class="form-control" type="text" placeholder="Ingresá tu email" aria-label="Ingresá tu email" aria-describedby="button-addon">
                             <div class="input-group-append">

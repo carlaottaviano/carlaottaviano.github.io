@@ -54,16 +54,29 @@
             <header class="sticky-top container-fluid">
                 <div class="row">
                     <div class="offset-1 col-10">
-                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="https://carlaottaviano.github.io/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
-                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/company/company.html">Empresa</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="http://localhost:3000/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
+                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link" href="http://localhost:3000/app/home/index.html">Home</a><a class="nav-item nav-link" href="http://localhost:3000/app/company/company.html">Empresa</a><a class="nav-item nav-link" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="nav-item nav-link" href="http://localhost:3000/app/products/products.html">Productos</a><a class="nav-item nav-link" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="nav-item nav-link" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                 <hr class="d-none d-md-block">
-                                <button class="btn btn-primary btn--icon" type="submit"> <i data-feather="users"></i>Acceso a clientes</button>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary btn--icon dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="users"></i>Login<i data-feather="chevron-down"></i></button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button class="dropdown-item" type="button">Acceso a clientes</button>
+                                        <button class="dropdown-item" type="button">Acceso a distribuidores</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="btn-group menu__btn--hamburger d-xl-none">
                                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="menu"></i></button>
-                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/brands/brands.html">Empresa</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="http://localhost:3000/app/home/index.html">Home</a><a class="dropdown-item" href="http://localhost:3000/app/brands/brands.html">Empresa</a><a class="dropdown-item" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="dropdown-item" href="http://localhost:3000/app/products/products.html">Productos</a><a class="dropdown-item" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="dropdown-item" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="dropdown-item" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                     <div class="dropdown-divider"></div>
-                                    <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                    <div class="d-flex djustify-content-center flex-column">
+                                        <div>
+                                            <button class="btn btn-primary btn--icon mb-4 mx-auto" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a distribuidores</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </nav>
@@ -77,7 +90,7 @@
                             <div class="col-12">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="https://carlaottaviano.github.io/app/home/index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="http://localhost:3000/app/home/index.html">Home</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">Trabajá con Nosotros</li>
                                     </ol>
                                 </nav>
@@ -90,7 +103,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p>Envianos tus datos y te tendremos en cuenta para futuras búsquedas laborales.</p>
+                                <p>Envíenos sus datos y lo tendremos en cuenta para futuras búsquedas laborales.</p>
                                 <form action="">
                                     <div class="form-group">
                                         <input class="form-control" type="text" placeholder="Nombre y Apellido (*)">
@@ -113,12 +126,9 @@
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input class="custom-file-input" id="inputGroupFile01" type="file" aria-describedby="inputGroupFileAddon01">
-                                                <label class="custom-file-label" for="inputGroupFile01">Seleccionar archivo</label>
+                                                <label class="custom-file-label" for="inputGroupFile01">Subir CV</label>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" type="url" placeholder="Linkedin (https://linkedin.com/in/usuario)">
                                     </div>
                                     <button class="btn btn-primary mb-8" type="submit">Enviar curriculum</button>
                                 </form>
@@ -127,6 +137,18 @@
                     </div>
                     <div class="offset-0 col-12 offset-lg-1 col-lg-4 d-flex justify-content-center justify-content-lg-start align-items-center position-relative mt-7 mt-lg-0 p-0"><img src="../../assets/images/jobs.png" alt="Trabajá con nosotros">
                         <div class="bg-secondary p-0"></div>
+                        <div class="card bg-primary card__aside">
+                            <div class="card-header">
+                                <h2 class="text-white">Búsquedas vigentes</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="media mb-6"><i class="mr-6" data-feather="briefcase"></i>
+                                    <div class="media-body">
+                                        <p>Administrativo/a contable</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="toast__container">
@@ -153,7 +175,7 @@
             <section class="container-fluid section__contact bg-primary">
                 <div class="row">
                     <div class="offset-1 col-10 d-flex justify-content-between align-items-center flex-column flex-md-row">
-                        <p class="mb-5 mb-md-0 text-center text-md-left">Le brindamos el asesoramiento adecuado</p><a class="btn btn-secondary btn--icon" role="button" href="https://carlaottaviano.github.io/app/contact/contact.html"> <i data-feather="mail"></i>Contactanos</a>
+                        <p class="mb-5 mb-md-0 text-center text-md-left">Le brindamos el asesoramiento adecuado</p><a class="btn btn-secondary btn--icon" role="button" href="http://localhost:3000/app/contact/contact.html"> <i data-feather="mail"></i>Contáctenos</a>
                     </div>
                 </div>
             </section>
@@ -178,15 +200,15 @@
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Links de interés</h3>
                         <ul>
-                            <li><a href="https://carlaottaviano.github.io/app/faq/faq.html">Preguntas frecuentes</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/jobs/jobs.html">Trabajá con nosotros</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/products/products.html">Productos</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a></li>
+                            <li><a href="http://localhost:3000/app/faq/faq.html">Preguntas frecuentes</a></li>
+                            <li><a href="http://localhost:3000/app/jobs/jobs.html">Trabajá con nosotros</a></li>
+                            <li><a href="http://localhost:3000/app/products/products.html">Productos</a></li>
+                            <li><a href="http://localhost:3000/app/services/services.html">Servicios</a></li>
                         </ul>
                     </div>
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Newsletter</h3>
-                        <p>Suscribite a nuestro newsletter y entérate de todas las novedades. No vamos a compartir tu email.</p>
+                        <p>Suscríbase a nuestro newsletter y entérese de todas las novedades. No vamos a compartir su email.</p>
                         <div class="input-group mb-3">
                             <input class="form-control" type="text" placeholder="Ingresá tu email" aria-label="Ingresá tu email" aria-describedby="button-addon">
                             <div class="input-group-append">

@@ -54,28 +54,41 @@
             <header class="sticky-top container-fluid">
                 <div class="row">
                     <div class="offset-1 col-10">
-                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="https://carlaottaviano.github.io/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
-                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/company/company.html">Empresa</a><a class="nav-item nav-link active" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                        <nav class="navbar navbar-expand-xl"><a class="navbar-brand" href="http://localhost:3000/app/home/index.html"><img class="d-none d-sm-none d-md-block" src="../../assets/images/logo-hausnet.svg" alt="Hausnet S.R.L"><img class="d-sm-block d-md-none" src="../../assets/images/isologo-hausnet.svg" alt="Hausnet S.R.L"></a>
+                            <div class="navbar-nav d-none d-xl-flex"><a class="nav-item nav-link" href="http://localhost:3000/app/home/index.html">Home</a><a class="nav-item nav-link" href="http://localhost:3000/app/company/company.html">Empresa</a><a class="nav-item nav-link active" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="nav-item nav-link" href="http://localhost:3000/app/products/products.html">Productos</a><a class="nav-item nav-link" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="nav-item nav-link" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="nav-item nav-link" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                 <hr class="d-none d-md-block">
-                                <button class="btn btn-primary btn--icon" type="submit"> <i data-feather="users"></i>Acceso a clientes</button>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary btn--icon dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="users"></i>Login<i data-feather="chevron-down"></i></button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button class="dropdown-item" type="button">Acceso a clientes</button>
+                                        <button class="dropdown-item" type="button">Acceso a distribuidores</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="btn-group menu__btn--hamburger d-xl-none">
                                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="menu"></i></button>
-                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="https://carlaottaviano.github.io/app/home/index.html">Home</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/brands/brands.html">Empresa</a><a class="dropdown-item active" href="https://carlaottaviano.github.io/app/brands/brands.html">Representadas</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/products/products.html">Productos</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a><a class="dropdown-item" href="https://carlaottaviano.github.io/app/contact/contact.html">Contacto</a>
+                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="http://localhost:3000/app/home/index.html">Home</a><a class="dropdown-item" href="http://localhost:3000/app/brands/brands.html">Empresa</a><a class="dropdown-item active" href="http://localhost:3000/app/brands/brands.html">Representadas</a><a class="dropdown-item" href="http://localhost:3000/app/products/products.html">Productos</a><a class="dropdown-item" href="http://localhost:3000/app/services/services.html">Servicios</a><a class="dropdown-item" href="http://localhost:3000/app/distributors/distributors.html">Distribuidores</a><a class="dropdown-item" href="http://localhost:3000/app/contact/contact.html">Contacto</a>
                                     <div class="dropdown-divider"></div>
-                                    <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                    <div class="d-flex djustify-content-center flex-column">
+                                        <div>
+                                            <button class="btn btn-primary btn--icon mb-4 mx-auto" type="button"> <i data-feather="users"></i>Acceso a clientes</button>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary btn--icon" type="button"> <i data-feather="users"></i>Acceso a distribuidores</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </nav>
                     </div>
                 </div>
             </header>
-            <section class="container-fluid mb-8">
+            <section class="container-fluid mb-8 page__brands">
                 <div class="row">
                     <div class="offset-1 col-10">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="https://carlaottaviano.github.io/app/home/index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="http://localhost:3000/app/home/index.html">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Representadas</li>
                             </ol>
                         </nav>
@@ -89,139 +102,131 @@
                 <div class="row">
                     <div class="offset-1 col-10">
                         <div class="row">
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/epi.png" alt="Edridge Products Inc."></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Caudalímetros por dispersión térmica.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/a-plus-genie.png" alt="A+ Corporation - Genie"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Protección de analizadores. Extracción y acondicionamiento de muestras.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/ascorel.png" alt="Ascorel"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Sistemas de pesaje y control de inventarios.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/cerex.png" alt="Cerex - Monitoring Solutions, LLC."></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Analizadores de gases múltiple por FTIR. Monitoreo de procesos y emisiones.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/dynamic.png" alt="Dynamic Flor Computers"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Computadores de caudal.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/gasco.png" alt="Gasco. Setting Standards. Exceedind Expectations"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Cilindros de gases patrones certificados para calibración de detectores y analizadores</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/hanwei.png" alt="Hanwei"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Detectores de gases fijos y personales.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/jct.png" alt="JCT. Analysentechnik GmbH"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Sondas y sistemas de acondicionamientos de muestras gaseosas para CEMS</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/michell.png" alt="Michell Instruments"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Especialistas en análisis de punto de rocío, humedad y oxígeno.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/dyna.png" alt="DYNA Instruments"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Medición y monitoreo de flujo de sólidos.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/boqu.png" alt="Boqu Instrument"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Analizadores de agua potable, residual y pura.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/ameritrol.png" alt="Ameritrol Inc."></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Detectores de caudal y nivel de líquidos y gases.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/philemon.png" alt="Philemon TM"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Especialistas en medición de caudal de líquidos y gases. Detección y medición de nivel de líquidos y sólidos.</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/e-instruments.png" alt="E instruments"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Analizadores portátiles de combustión y emisiones</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
                                     <div class="card">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/isensys.png" alt="Isensys. Intelligent Sensing"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Detectores de arena en petróleo y gas</p>
                                         </div>
                                     </div>
                                 </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <div class="card mb-lg-0">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3"><a href="http://localhost:3000/app/products/products.html">
+                                    <div class="card">
+                                        <div class="card-body px-6 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/brands/adev.png" alt="ADEV"></div>
                                         <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
-                                        </div>
-                                    </div>
-                                </a></div>
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-3"><a href="https://carlaottaviano.github.io/app/products/products.html">
-                                    <div class="card mb-lg-0">
-                                        <div class="card-body px-6 py-7 d-flex justify-content-center align-items-center"><img class="img-fluid image--grayscale" src="../../assets/images/logo-hausnet.png" alt="Hausnet S.R.L"></div>
-                                        <div class="card-footer">
-                                            <p class="text-gray mb-0">texto explicativo</p>
+                                            <p class="text-gray mb-0">Analizadores de combustión y emisiones. Sondas refrigeradas para industria cementera.</p>
                                         </div>
                                     </div>
                                 </a></div>
@@ -232,7 +237,7 @@
             <section class="container-fluid section__contact bg-primary">
                 <div class="row">
                     <div class="offset-1 col-10 d-flex justify-content-between align-items-center flex-column flex-md-row">
-                        <p class="mb-5 mb-md-0 text-center text-md-left">Le brindamos el asesoramiento adecuado</p><a class="btn btn-secondary btn--icon" role="button" href="https://carlaottaviano.github.io/app/contact/contact.html"> <i data-feather="mail"></i>Contactanos</a>
+                        <p class="mb-5 mb-md-0 text-center text-md-left">Le brindamos el asesoramiento adecuado</p><a class="btn btn-secondary btn--icon" role="button" href="http://localhost:3000/app/contact/contact.html"> <i data-feather="mail"></i>Contáctenos</a>
                     </div>
                 </div>
             </section>
@@ -257,15 +262,15 @@
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Links de interés</h3>
                         <ul>
-                            <li><a href="https://carlaottaviano.github.io/app/faq/faq.html">Preguntas frecuentes</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/jobs/jobs.html">Trabajá con nosotros</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/products/products.html">Productos</a></li>
-                            <li><a href="https://carlaottaviano.github.io/app/services/services.html">Servicios</a></li>
+                            <li><a href="http://localhost:3000/app/faq/faq.html">Preguntas frecuentes</a></li>
+                            <li><a href="http://localhost:3000/app/jobs/jobs.html">Trabajá con nosotros</a></li>
+                            <li><a href="http://localhost:3000/app/products/products.html">Productos</a></li>
+                            <li><a href="http://localhost:3000/app/services/services.html">Servicios</a></li>
                         </ul>
                     </div>
                     <div class="offset-lg-0 col-lg-3 offset-1 col-10">
                         <h3>Newsletter</h3>
-                        <p>Suscribite a nuestro newsletter y entérate de todas las novedades. No vamos a compartir tu email.</p>
+                        <p>Suscríbase a nuestro newsletter y entérese de todas las novedades. No vamos a compartir su email.</p>
                         <div class="input-group mb-3">
                             <input class="form-control" type="text" placeholder="Ingresá tu email" aria-label="Ingresá tu email" aria-describedby="button-addon">
                             <div class="input-group-append">
