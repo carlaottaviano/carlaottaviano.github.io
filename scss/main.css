@@ -9853,6 +9853,26 @@ footer {
   .page__brands .card-footer {
     height: 111px; } }
 
+.page__distributors .card-footer {
+  height: 155px; }
+  .page__distributors .card-footer .brand__icon {
+    position: absolute;
+    bottom: 15px; }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .page__distributors .card-footer {
+    height: 135px; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .page__distributors .card-footer {
+    height: 155px; } }
+
+@media (max-width: 767.98px) {
+  .page__distributors .card-footer {
+    height: auto; }
+    .page__distributors .card-footer .brand__icon {
+      position: inherit; } }
+
 table.dataTable {
   width: 100%;
   margin: 0 auto;
