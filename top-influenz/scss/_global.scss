@@ -1,0 +1,186 @@
+// Fonts 
+
+@font-face {
+  font-family: 'Gotham Rounded Bold Italic';
+  src: url('../fonts/GothamRounded-BoldItalic.woff2') format('woff2'),
+  url('../fonts/GothamRounded-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Book Italic';
+  src: url('../fonts/GothamRounded-BookItalic.woff2') format('woff2'),
+  url('../fonts/GothamRounded-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Medium Italic';
+  src: url('../fonts/GothamRounded-MediumItalic.woff2') format('woff2'),
+  url('../fonts/GothamRounded-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Medium';
+  src: url('../fonts/GothamRounded-Medium.woff2') format('woff2'),
+  url('../fonts/GothamRounded-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Light';
+  src: url('../fonts/GothamRounded-Light.woff2') format('woff2'),
+  url('../fonts/GothamRounded-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Bold';
+  src: url('../fonts/GothamRounded-Bold.woff2') format('woff2'),
+  url('../fonts/GothamRounded-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Light Italic';
+  src: url('../fonts/GothamRounded-LightItalic.woff2') format('woff2'),
+  url('../fonts/GothamRounded-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Book';
+  src: url('../fonts/GothamRounded-Book.woff2') format('woff2'),
+  url('../fonts/GothamRounded-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Global component styles
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  color: #3d3d3d;
+  letter-spacing: 0.1px;
+
+}
+
+a {
+  &:focus {
+    outline: none;
+  }
+  &.clickable_card:hover {
+    text-decoration: none;
+  }
+}
+
+// Main page wrapper
+#wrapper {
+  display: flex;
+  height: 100vh;
+  #content-wrapper {
+    background-color: $gray-bg;
+    width: 100%;
+    overflow-x: hidden;
+    // margin-left: 104px;
+    #content {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+// Set container padding to match gutter width instead of default 15px
+.container,
+.container-fluid {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+  padding-top: 83px;
+  min-height: calc(100vh - 123px);
+  >.media {
+    margin-top: 40px;
+  }
+}
+
+
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: $white;
+  background: fade-out($gray-800, .5);
+  line-height: 46px;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  i {
+    font-weight: 800;
+  }
+}
+
+// Typography
+
+h1 {
+  font-size: 16px;
+  font-family: 'Gotham Rounded Medium';
+}
+
+h5 {
+  font-size: 14px;
+  font-family: 'Gotham Rounded Medium';
+  margin-top: 8px;
+}
+
+small {
+  font-size: 75%;
+}
+
+// media object
+.media {
+  margin-bottom: 20px;
+  img {
+    width: 41px;
+    height: 41px;
+    box-shadow: $box-shadow-sm;
+  }
+  h1 {
+    margin-bottom: 0px;
+    margin-top: 2px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #wrapper #content-wrapper {
+    margin-left: 244px;
+    .topbar {
+      width: calc(100vw - 244px);
+    }
+  }
+}
+
+// HIDE
+.hide {
+  display: none !important;
+}
+

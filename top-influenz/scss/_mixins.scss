@@ -1,0 +1,13 @@
+@mixin input_icon ($icon) {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-position: 96% 55%;
+	background-repeat: no-repeat;
+	background-image: $icon;
+	background-size: 19px;
+	display: inline-block;
+	// margin-right: 20px;
+	padding-right: 37px !important;
+	padding-top: 10px;
+}
+

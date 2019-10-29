@@ -1,0 +1,42 @@
+// Custom Dropdown Styling
+
+.dropdown {
+  .dropdown-menu {
+    font-size: $dropdown-font-size;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    .dropdown-header {
+      font-weight: 800;
+      font-size: 14px;
+      color: $blue;
+    }
+    .dropdown-item {
+      padding: 10px 26px;
+      &:hover {
+        color: $blue;
+        background-color: rgba($blue, 0.05);
+        i {
+          color: $blue;
+        }
+      }
+      i {
+        color: $gray-light;
+        margin-right: 15px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Utility class to hide arrow from dropdown
+
+.dropdown.no-arrow {
+  .dropdown-toggle::after {
+    display: none;
+  }
+}

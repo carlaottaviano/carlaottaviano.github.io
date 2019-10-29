@@ -1,0 +1,64 @@
+.modal-dialog {
+  .modal-content {
+    text-align: center;
+    .modal-header {
+      border-bottom: none;
+      .close {
+        margin: -1rem -1rem -1rem -2rem;
+      }
+      img {
+        margin-top: 16px;
+        & ~ h5 {
+          margin-top: 25px;
+        }
+      }
+      h5 {
+        font-size: 28px;
+        margin-top: 40px;
+        line-height: normal;
+      }
+    }
+    .modal-body {
+      font-size: 14px;
+      padding: 0 1rem;
+      form {
+        margin-top: 35px;
+        text-align: left;
+        .form-check {
+          text-align: center;
+          input {
+            margin-top: 0px;
+          }
+        }
+        .form-check:last-child {
+          padding-left: 12px;
+        }
+      }
+    }
+    .modal-footer {
+      border-top: none;
+      justify-content: center;
+      padding: 40px 1rem;
+    }
+    form {
+      &.needs-validation {
+        .form-group:first-child {
+          margin-top: 35px;
+          text-align: left;
+        }
+      }
+      .form-group:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+#modal_bienvenida, #modal_eliminar_cuenta {
+  .modal-footer {
+    .btn {
+      width: 50%;
+      padding: 10px;
+    }
+  }
+}

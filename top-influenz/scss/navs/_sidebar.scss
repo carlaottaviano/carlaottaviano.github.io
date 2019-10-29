@@ -1,0 +1,126 @@
+// Sidebar
+.sidebar {
+  height: calc(100vh - 83px);
+  margin-top: 83px;
+  width: $sidebar-base-width !important;
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  .nav-item {
+    &:first-of-type {
+      margin-top: 104px;
+    }
+    .nav-link {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 1rem;
+      padding-left: 30px;
+      width: $sidebar-base-width;
+      i {
+        font-size: 12px;
+        margin-right: 16px;
+        color: $gray-light;
+      }
+      span {
+        font-size: 12px;
+        display: inline;
+        color: $gray;
+      }
+    }
+    &.active {
+      .nav-link {
+        font-family: $font-family-medium;
+        i, span {
+          color: $red;
+        }
+      }
+    }
+    &:hover {
+      .nav-link {
+        i, span {
+          color: $red;
+        }
+      }
+    }
+  }
+  &.toggled {
+    width: 0 !important;
+    overflow: hidden;
+    #sidebarToggle::after {
+      content: '\f105';
+      font-family: 'Font Awesome 5 Free';
+      margin-left: 0.25rem;
+    }
+  }
+  .sidebar-brand {
+    display: none !important;
+    height: $topbar-base-height;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    z-index: 1;
+    background-image: url(../img/logo-icono.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+
+    .sidebar-brand-icon i {
+      font-size: 2rem;
+    }
+    .sidebar-brand-text {
+      display: none;
+    }
+  }
+  hr.sidebar-divider {
+    margin: 0 1rem 1rem;
+  }
+  .sidebar-heading {
+    text-align: center;
+    padding: 0 1rem;
+    font-weight: 800;
+    font-size: 0.65rem;
+    @extend .text-uppercase;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .sidebar {
+    margin-top: 0px;
+    width: auto;
+    .nav-item {
+      .collapse {
+        position: relative;
+        left: 0;
+        z-index: 1;
+        top: 0;
+        animation: none;
+        .collapse-inner {
+          border-radius: 0;
+          box-shadow: none;
+        }
+      }
+      .collapsing {
+        display: block;
+        transition: $transition-collapse;
+      }
+      .collapse,
+      .collapsing {
+        margin: 0 1rem;
+      }
+    }
+    .sidebar-brand {
+      background-image: url(../img/logo.svg);
+      background-size: 135px;
+      display: flex !important;
+    }
+    &.toggled {
+      overflow: visible;
+      width: $sidebar-base-width !important;
+    }
+  }
+}

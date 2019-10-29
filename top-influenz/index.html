@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>Top Influenz</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="scss/template.css" rel="stylesheet">
+    <link href="scss/introjs.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top" class="page_home">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar accordion" id="accordionSidebar" style="position:absolute;">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html" title="Top Influenz"></a>
+
+            <!-- Nav Items -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <div class="desktopTour">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="mis_cuentas.html">
+                <i class="fas fa-users"></i>
+                <span>Mis cuentas</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="compatibles.html">
+                <i class="fas fa-star"></i>
+                <span>Compatibles</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="permanentes.html">
+                <i class="fas fa-lock"></i>
+                <span>Permanentes</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="referidos.html">
+                <i class="fas fa-bullhorn"></i>
+                <span>Referidos</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="planes.html">
+                <i class="fas fa-crown"></i>
+                <span>Planes Premium</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ayuda.html">
+                <i class="fas fa-question-circle"></i>
+                <span>Ayuda</span>
+            </a>
+        </li>
+
+    </ul>
+    <!-- End Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
+
+                <!-- logotipo version mobile -->
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html" title="Top Influenz"></a>
+
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <!-- Topbar Navbar -->
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- Nav Item - Notifications -->
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-bell"></i>
+                            <!-- Counter - Notifications -->
+                            <span class="badge badge-danger badge-counter">2</span>
+                        </a>
+                        <!-- Dropdown - Notifications -->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header"> Notificaciones</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div>
+                                    <div class="small text-gray-500">7/04/2019</div>
+                                    <span class="font-weight-bold">Te quedan 10 dias gratis. Hacete premium ahora.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div>
+                                    <div class="small text-gray-500">7/04/2019</div>
+                                    <span class="font-weight-bold">Actualizá tu contraseña de Instagram.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- Nav Item - User Information -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="mr-2 img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                            <div class="usuario">
+                                <span class="d-none d-sm-inline">@somosfruver</span>
+
+                                <!-- Dejo preparadas ambas opciones de prueba gratuita y premium. Mostrar la que corresponda. (sacar clase hide para mostrar) -->
+                                <span class="d-none d-sm-inline gratis"><i class="fas fa-crown"></i> Prueba gratuita</span>
+                                <span class="d-none d-sm-inline premium hide"><i class="fas fa-crown"></i> Premium</span>
+
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="mis_cuentas.html">
+                                <i class="fas fa-user"></i>
+                                Mis cuentas
+                            </a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal_agregar_cuenta">
+                                <i class="fas fa-plus"></i>
+                                Agregar cuenta
+                            </a>
+                            <a class="dropdown-item" href="ingresar.html">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Cerrar sesión
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <!-- alerts -->
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <b>Prueba Gratis.</b> Te quedan 10 días restantes!
+                    <a class="btn btn-outline-light btn-sm" href="planes.html" role="button">Quiero Premium</a>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Page Heading -->
+                <div class="media" id="page-heading-card">
+                    <img src="img/home-icon.svg" class="mr-3" alt="home">
+                    <div class="media-body">
+                        <h1>Home</h1>
+                        <small>Aquí se encuentra un resumen de tu progreso @somosfruver</small>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!-- Card Seguidores Semanales -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card_seguidores_blue">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col">
+                                        <h6 class="card-title">Seguidores<br>Semanales</h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <img src="img/seguidores-semanales.svg">
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="card-text">100</span>
+                                        <p>+10% que la semana pasada</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Seguidores Mensuales -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card_seguidores_yellow">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col">
+                                        <h6 class="card-title">Seguidores<br>Mensuales</h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <img src="img/seguidores-mensuales.svg">
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="card-text">400</span>
+                                        <p>+20% que el mes pasado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Seguidores Totales -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card card_seguidores_black">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col">
+                                        <h6 class="card-title">Seguidores<br>Totales</h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <img src="img/seguidores-totales.svg">
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="card-text">100</span>
+                                        <p>+40% que al comienzo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Crecimiento -->
+                    <div class="col-xl-3 col-md-6 mb-4 desktopTour" id="card_crecimiento_div">
+                        <div class="card card_crecimiento">
+                            <div class="card-body">
+                                <p><b>Desactivar crecimiento</b><br>de @somosfruver <i class="fas fa-question-circle" data-container="body" data-toggle="popover" data-trigger="click" data-placement="top" title="Ayuda" data-content="Al activar tu crecimiento empezaremos a seguir cuentas relacionadas con los perfiles que configures en la sección de Compatibles."></i></p>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <!-- Card Seguidores nuevos -->
+                    <div class="col-xl-8 col-lg-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Seguidores nuevos</h5>
+                                <div>
+                                    <select class="form-control">
+                                        <option>Últimos 6 meses</option>
+                                        <option>Próximo mes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="myAreaChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Seguidores nuevos vacia (sacar clase hide para mostrar) -->
+                    <div class="col-xl-8 col-lg-6 mb-4 hide">
+                        <div class="card mb-4 card_seguidores_nuevos">
+                            <div class="card-header">
+                                <h5>Seguidores nuevos</h5>
+                                <div>
+                                    <select class="form-control">
+                                        <option>Últimos 6 meses</option>
+                                        <option>Próximo mes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="media">
+                                    <img src="img/seguidores-nuevos.svg" alt="Seguidores Nuevos">
+                                    <div class="media-body">
+                                        <span>Pronto verás tu crecimiento aquí</span>
+                                        <p>Configura tus cuentas compatibles para tener mas seguidores.</p>
+                                        <a href="compatibles.html" class="btn btn-primary">Configurar compatibles</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card expectativa -->
+                    <div class="col-xl-4 col-lg-6 mb-4">
+                        <div class="card mb-4 card_expectativa">
+                            <div class="card-header">
+                                <h5>Expectativa</h5>
+                                <div>
+                                    <select class="form-control">
+                                        <option>1 mes</option>
+                                        <option>Próximos 6 meses</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="numero">
+                                    <span>+</span>
+                                    <span>1200</span>
+                                </div>
+                                <span>Seguidores nuevos</span>
+                                <img src="img/expectativa.svg" alt="Expectativa">
+                                <p>El mes que viene tendrás <b>+1200</b> seguidores nuevos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card expectativa vacia (sacar clase hide para mostrar) -->
+                    <div class="col-xl-4 col-lg-6 mb-4 hide">
+                        <div class="card mb-4 card_expectativa">
+                            <div class="card-header">
+                                <h5>Expectativa</h5>
+                                <div>
+                                    <select class="form-control">
+                                        <option>1 mes</option>
+                                        <option>Próximos 6 meses</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/expectativa-vacia.svg" alt="Expectativa">
+                                <p>Configura tus cuentas Compatibles para aumentar tus seguidores <i class="fas fa-question-circle"data-container="body" data-toggle="popover" data-trigger="click" data-placement="top" title="Ayuda" data-content="Para poder hacer crecer tu audiencia primero tenes que configurar cuentas  Compatibles que estén relacionadas con tus intereses."></i></p>
+                                <a href="ayuda.html" class="btn btn-primary">¿Cómo funciona?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End container-fluid -->
+
+    </div>
+    <!-- End Main Content -->
+
+
+
+</div>
+<!-- End Content Wrapper -->
+
+</div>
+<!-- End Page Wrapper -->
+
+<!-- FAB -->
+<a class="btn-fab btn-success desktopTour mobileTour" href="#" target="_blanck" id="whatsapp-message">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- modals -->
+
+<!-- Modal Bienvenida -->
+<div class="modal" id="modal_bienvenida" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-12">
+                    <img src="img/mdl_exito.svg">
+                    <h5 class="modal-title">¡Bienvenido a Top influenz!</h5>
+                </div>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Comencemos este viaje juntos. <br> Ya diste el primer paso para hacer crecer tus seguidores!
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-primary btn-lg" type="button" data-dismiss="modal">Cancelar</button>
+                <a class="btn btn-primary btn-lg" role="button" href="ayuda.html?startTour=true">Ver cómo funciona</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Agregar cuenta -->
+<div class="modal fade" id="modal_agregar_cuenta" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="col-12">
+            <h5 class="modal-title">Agregar cuenta</h5>
+        </div>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      Ingresá tu usuario y<br>contraseña de Instagram.
+      <form class="col-8 offset-2">
+        <div class="form-group">
+          <label>Usuario</label>
+          <input type="text" class="form-control input_search" placeholder="Ingresa tu cuenta aquí...">
+      </div>
+      <div class="form-group">
+          <label>Contraseña</label>
+          <input type="password" class="form-control" placeholder="Ingresa tu cuenta aquí...">
+      </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary btn-lg" type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal_verificar">Agregar cuenta</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal Verificar -->
+<div class="modal" id="modal_verificar" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="col-12">
+            <h5 class="modal-title">Verificar cuenta<br>de Instagram</h5>
+        </div>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      Instagram necesita que verifiques tu cuenta.<br>Podés hacerlo por Email o por SMS.
+      <form>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Email</label>
+      </div>
+      <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck2">
+          <label class="form-check-label" for="exampleCheck2">SMS</label>
+      </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary btn-lg" type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal_ingresar_codigo">Verificar cuenta</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal Ingresar código -->
+<div class="modal" id="modal_ingresar_codigo" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="col-12">
+            <h5 class="modal-title">Ingresar código</h5>
+        </div>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      Ingresá el código que<br>recibiste vía mail o sms <i class="fas fa-question-circle" data-container="body" data-toggle="popover" data-trigger="click" data-placement="top" title="Ayuda" data-content="Instagram necesita que verifiques tu cuenta. Podes hacerlo por SMS o por Email. Por favor, antes de continuar asegurate que tienes acceso a alguno de estos."></i>
+      <form class="col-6 offset-3">
+        <input class="form-control type="text">
+    </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary btn-lg" type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal_exito_cuenta">Enviar código</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal Éxito Cuenta -->
+<div class="modal" id="modal_exito_cuenta" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="col-12">
+            <img src="img/mdl_exito.svg">
+            <h5 class="modal-title">¡Genial!</h5>
+        </div>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      Tu cuenta fue agregada correctamente a tu lista. Debes configurar compatibles para crecer!
+  </div>
+  <div class="modal-footer">
+      <button class="btn btn-primary btn-lg" type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal_agregar_compatibles">Configurar compatibles</button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Modal Agregar Compatibles -->
+<div class="modal" id="modal_agregar_compatibles" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="col-12">
+            <h5 class="modal-title">Agregar compatibles</h5>
+        </div>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      Ingresa una cuenta de Instagram que tenga<br>un perfil similar al tuyo. Por ejemplo:<br>celebrities, influencers, marcas, etc.
+      <form class="col-8 offset-2">
+        <div class="form-group">
+          <input type="text" class="form-control input_search" placeholder="@cuenta">
+      </div>
+      <div class="cnt_badges">
+          <span class="badge badge_cuentas">@crossfit.baires<i class="fas fa-times"></i></span>
+          <span class="badge badge_cuentas">@healthylife<i class="fas fa-times"></i></span>
+          <span class="badge badge_cuentas">@saladgreenco<i class="fas fa-times"></i></span>
+          <span class="badge badge_cuentas">@fitness.life<i class="fas fa-times"></i></span>
+      </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary btn-lg" type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal_exito_compatibles">Agregar compatibles</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal Éxito Compatibles -->
+<div class="modal" id="modal_exito_compatibles" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="col-12">
+            <img src="img/mdl_exito.svg">
+            <h5 class="modal-title">¡Genial!</h5>
+        </div>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      Tus compatibles fueron agregados correctamente a tu lista.
+  </div>
+  <div class="modal-footer">
+    <a class="btn btn-primary btn-lg" role="button" href="compatibles.html">Ver compatibles</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="js/custom.js"></script>
+
+<!-- Charts -->
+<script src="vendor/chart.js/Chart.min.js"></script>
+<script src="js/demo/chart-area-demo.js"></script>
+
+<!-- IntroJS -->
+<script src="js/intro.js"></script>
+
+<!-- Mostrar popovers -->
+<script type="text/javascript">
+    $(document).ready(function () {
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+  });
+</script>
+
+<!-- Mostras modal al cargar la página -->
+<script type="text/javascript">
+    $(window).on('load',function(){
+      var visited = localStorage['visited'];
+      if (!visited) {
+       $('#modal_bienvenida').modal('show');
+       localStorage['visited'] = true;
+   }
+});
+</script>
+
+<script>
+    // Start guided tour
+    $(document).ready(function() {
+      let searchParams = new URLSearchParams(window.location.search);
+      let isMobile = $('#sidebarToggleTop').css('display') === 'block';
+      if (searchParams.has('tour')) {
+       if (!isMobile) {
+         introJs()
+         .addSteps([{
+             element: document.querySelectorAll('.desktopTour')[0],
+             intro: "En la &quot;Home&quot; tendrás la información general de tu cuenta de Instagram",
+             step: "6"
+         },
+         {
+             element: document.getElementById('card_crecimiento_div'),
+             intro: "Con este botón podrás activar y desactivar el crecimiento de cada cuenta",
+             step: "7"
+         },
+         {
+             element: document.getElementById('whatsapp-message'),
+             intro: "Si tienes alguna duda puedes escribirnos por Whatsapp!",
+             step: "8"
+         }
+         ])
+         .setOption('doneLabel', 'Siguiente')
+         .setOption("showBullets", false)
+         .setOption('nextLabel', 'Siguiente')
+         .setOption('prevLabel', 'Cerrar')
+         .setOption('skipLabel', 'Cerrar')
+         .setOption('hideNext', true)
+         .setOption('hidePrev', true)
+         .start();
+     } else {
+       introJs()
+       .addSteps([{
+           element: document.getElementById('page-heading-card'),
+           intro: "En la &quot;Home&quot; tendrás la información general de tu cuenta de Instagram",
+           step: "6"
+       },
+       {
+           element: document.getElementById('card_crecimiento_div'),
+           intro: "Con este botón podrás activar y desactivar el crecimiento de cada cuenta",
+           step: "7"
+       },
+       {
+           element: document.getElementById('whatsapp-message'),
+           intro: "Si tienes alguna duda puedes escribirnos por Whatsapp!",
+           step: "8",
+           position: 'left'
+       }
+       ])
+       .setOption('scrollToElement', true)
+       .setOption('doneLabel', 'Siguiente')
+       .setOption("showBullets", false)
+       .setOption('nextLabel', 'Siguiente')
+       .setOption('prevLabel', 'Cerrar')
+       .setOption('skipLabel', 'Cerrar')
+       .setOption('hideNext', true)
+       .setOption('hidePrev', true)
+       .onbeforechange(function(targetElement) {
+          $("#content-wrapper").css({'position': 'absolute'});
+      })
+       .onafterchange(function(targetElement) {
+           if(targetElement.id === "whatsapp-message")
+             $(".introjs-tooltipReferenceLayer").css({'top': '550px','left': '400px'});
+         $(".introjs-helperNumberLayer").css({'visibility':'hidden'})
+     })
+       .start()
+       .oncomplete(function() {
+           $("#content-wrapper").css({'position': ''});
+       });
+   }
+}
+});
+</script>
+
+</body>
+
+</html>

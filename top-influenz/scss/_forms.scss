@@ -1,0 +1,91 @@
+.form-control {
+  font-size: 14px;
+  letter-spacing: 0.13px;
+  color: $gray;
+  height: 45px;
+  border-radius: 2px;
+  border: 1px solid $gray-light;
+  line-height: 2.5;
+  &:focus {
+    box-shadow: none;
+    border-color: $blue;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: 92% 55%;
+  background-repeat: no-repeat;
+  background-image: url(../img/flecha.svg);
+  background-size: 12px;
+  padding-right: 37px !important;
+}
+
+label {
+  font-family: $font-family-medium;
+  color: $gray-light;
+  margin-bottom: 0;
+}
+
+// ICONS
+.input {
+  &_search {
+    @include input_icon(url(../img/icon-search.svg));
+  }
+  &_mail {
+    @include input_icon(url(../img/icon-mail.svg));
+  }
+  &_password {
+    @include input_icon(url(../img/icon-lock.svg));
+  }
+  &_user {
+    @include input_icon(url(../img/icon-user.svg));
+  }
+}
+
+
+ // CHECKBOX
+
+ .form-check {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  input {
+    border: solid 2px $blue;
+    -webkit-appearance: none;
+    width: 19px;
+    height: 19px;
+    min-width: 19px; 
+    margin-top: 3px;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 5px;
+      top: 0px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &:checked {
+      background-color: $blue;
+      color: #fff;
+    } 
+  }
+  label {
+    margin-left: 5px;
+    font-family: $font-family-sans-serif;
+    color: $gray;
+    font-size: 12px;
+  }
+}
+
+.invalid-feedback {
+  margin-top: 10px;
+}

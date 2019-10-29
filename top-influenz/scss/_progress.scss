@@ -1,0 +1,12 @@
+.progress {
+	margin-right: 35px;
+	min-width: 100px;
+	height: 15px;
+	border-radius: 7.5px;
+	span {
+		position: absolute;
+		right: 10px;
+		top: 22px;
+		color: $gray-light;
+	}
+}

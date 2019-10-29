@@ -1,0 +1,40 @@
+// Global styles for both custom sidebar and topbar compoments
+
+.sidebar,
+.topbar {
+  .nav-item:last-child {
+    // Customize Dropdown Arrows for Navbar
+    &.dropdown {
+      .dropdown-toggle {
+        &::after {
+          content: none;
+        }
+        i {
+          font-size: 14px;
+          margin-left: 20px;
+          color: $gray-light;
+        }
+      }
+      &.show {
+        // .dropdown-toggle::after {
+        //   content: '\f107';
+        // }
+      }
+    }
+    // Counter for nav links and nav link image sizing
+    .nav-link {
+      position: relative;
+      .badge-counter {
+        position: absolute;
+        transform: scale(0.7);
+        transform-origin: top right;
+        right: .25rem;
+        margin-top: -.25rem;
+      }
+      .img-profile {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}

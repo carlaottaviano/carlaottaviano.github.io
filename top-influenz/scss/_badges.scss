@@ -1,0 +1,32 @@
+.badge {
+	border-radius: 25px;
+	font-size: 14px;
+	padding: 3px 8px 2px 8px;
+	&-info {
+		background-color: $blue;
+	}
+	&-secondary {
+		background-color: $gray-light;
+	}
+}
+
+// DIV CONTENEDOR DE BADGES
+.cnt_badges {
+	max-height: 150px;
+	overflow: auto;
+	border: solid 1px $gray-light;
+	padding: 10px;
+}
+
+// BADGE CUENTAS
+
+.badge_cuentas {
+	background-color: black;
+	border-radius: 0px;
+	color: white;
+	padding: 8px 12px;
+	margin-bottom: 10px;
+	i {
+		margin-left: 12px;
+	}
+}

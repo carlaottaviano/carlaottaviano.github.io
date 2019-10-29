@@ -1,0 +1,66 @@
+.page_error {
+	.container-fluid {
+		.row {
+			align-items: center;
+			justify-content: center;
+			height: calc(100vh - 123px);
+		}
+	}
+}
+
+.page_ingresar, .page_crear_cuenta, .page_reestablecer_contaseña, .page_felicitaciones, .page_agregar_cuenta, .page_verificar_cuenta {
+	.container {
+		padding-top: 0px;
+		>.row:first-child {
+			align-items: center;
+			height: 100vh;
+		}
+	}
+}
+
+.page_reestablecer_contaseña, .page_felicitaciones, .page_agregar_cuenta, .page_verificar_cuenta {
+	.card-datos {
+		.card-body {
+			small {
+				margin-top: 6px;
+			}
+			form {
+				margin-top: 32px;
+				.form-group:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+
+.page_compatibles {
+	table {
+		tr {
+			td:nth-child(3) {
+				position: relative;
+			}
+			&:first-child {
+				td:nth-child(3) {
+					.progress {
+						span {
+							top: 31px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.page_ayuda {
+	.card_seguidores_nuevos {
+		height: auto;
+	}
+}
+
+.page_home {
+	.card .card-header > div .form-control {
+		margin-right: 0;
+	}
+}
