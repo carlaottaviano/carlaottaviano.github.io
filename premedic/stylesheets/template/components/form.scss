@@ -1,0 +1,53 @@
+form {
+	button {
+		width: 100%;
+		text-transform: none;
+		&.btn {
+			font-size: 20px;
+		}
+	}
+	.form-control {
+		height: 55px;
+		border-radius: 0px;
+		margin-bottom: 20px;
+		border: none;
+		background-color: map-get($colorGray, moreLighten2);
+		&::-webkit-input-placeholder { /* Chrome */
+			color: rgba($colorGrayDefault,0.7);
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+			color: rgba($colorGrayDefault,0.7);
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+			color: rgba($colorGrayDefault,0.7);
+		}
+		&:-moz-placeholder { /* Firefox 4 - 18 */
+			color: rgba($colorGrayDefault,0.7);
+		}
+		&:focus {
+			background-color: map-get($colorGray, moreLighten2);
+		}
+		padding-left: 20px;
+	}
+	select {
+		&:invalid {
+			color: rgba($colorGrayDefault,0.7);
+		}
+		&:not([multiple]) {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background-position: 95% 50%;
+			background-repeat: no-repeat;
+			background-image: url(../images/icons/flecha.svg);
+			padding-right: 1.5em;
+		}	
+	}
+	p {
+		font-weight: 400;
+		color: rgba($colorGrayDefault,0.7);
+		padding-left: 20px;
+	}
+	textarea.form-control {
+		padding: 18px 20px 20px 20px;
+	}
+}

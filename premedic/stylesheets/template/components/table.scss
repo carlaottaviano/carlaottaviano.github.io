@@ -1,0 +1,24 @@
+table {
+	margin-top: 120px;
+	border-top: 1px solid rgba($colorGrayDefault, 0.5);
+	color: $colorGrayDefault;
+	&.table {
+		margin-bottom: 50px;
+		td, th {
+			padding: 23px;
+		}
+		thead {
+			th {
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+		tbody {
+			th, td {
+				font-size: 12px;
+				font-weight: 300;
+				padding: 18px;
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<!--#include file="ssi_head.html"-->
+
+<body>
+    <main>
+
+        <!--#include file="ssi_header.html"-->
+
+        <section class="cnt_header_quienes_somos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>PreMedic<br>Medicina Privada</h1>
+                        <p>Nuestra solvencia moral y económica es la que nos caracteriza y nos diferencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cnt_quienes_somos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-xs-12">
+                        <h2>Somos una empresa dedicada exclusivamente a la prestación de servicios médicos.</h2>
+                    </div>
+                </div>
+                <div class="row destacado">
+                    <div class="col-sm-2 col-xs-12 linea">
+                    </div>
+                    <div class="col-sm-10 col-xs-12">
+                        <p>Empresa dedicada exclusivamente a la prestación de servicios médicos, se inicia con la impronta de satisfacer las necesidades prestacionales médicas a todas las personas que así lo requieran.</p>
+                        <p>Desde el comienzo, ha sido nuestra premisa fundamental, la de implementar un sistema de salud que se adapte adecuadamente a las exigencias actuales, logrando de esta manera una comunicación personalizada con cada uno de nuestros socios. Esa misma comunicación es la que poseemos con todos nuestros prestadores, porque son ellos los que nos representan cotidianamente, y gracias a esa fluidez logramos en forma conjunta brindar un servicio de salud acorde a sus necesidades.</p>
+                        <p>Nuestra solvencia moral y económica es la que nos caracteriza y nos diferencia, haciendo de PreMedic una empresa honesta que trabaja, piensa y actúa para usted y los suyos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cnt_virtudes">
+            <div class="container-fluid">
+                <div></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-md-12">
+                        <div>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="virtudes-tab" data-toggle="tab" href="#virtudes" role="tab" aria-controls="virtudes" aria-selected="true">Nuestras Virtudes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="compromiso-tab" data-toggle="tab" href="#compromiso" role="tab" aria-controls="compromiso" aria-selected="false">Nuestro Compromiso</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="virtudes" role="tabpanel" aria-labelledby="virtudes-tab">
+                                    <h6>Nuestras Virtudes</h6>
+                                    <p>· Compromiso con el afiliado.</p>
+                                    <p>· Atención personalizada.</p>
+                                    <p>· Prestadores de alta calidad médica.</p>
+                                    <p>· Solvencia Moral.</p>
+                                    <p>· Solvencia Económica.</p>
+                                    <p>· Recursos humanos a disposición del afiliado.</p>
+                                    <p>· Celeridad de respuesta.</p>
+                                </div>
+                                <div class="tab-pane" id="compromiso" role="tabpanel" aria-labelledby="compromiso-tab">
+                                    <h6>Nuestro Compromiso</h6>
+                                    <p>· Hacer de PreMedic la mejor empresa de Medicina Privada.</p>
+                                    <p>· Seguir superándonos para brindar un mejor servicio.</p>
+                                    <p>· La contratación de nuevos prestadores en cada zona.</p>
+                                    <p>· La apertura de nuevas sucursales.</p>
+                                    <p>· La apertura de nuevos centros médicos.</p>
+                                    <p>· Una constante capacitación a las personas que trabajan en PreMedic.</p>
+                                    <p>· Afianzar la atención personalizada.</p>
+                                    <p>De la conjunción enunciada de nuestras virtudes y el compromiso asumido a futuro, trabajaremos esforzadamente todos los días para que usted y su familia se encuentren protegidos ante cualquier eventualidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--#include file="ssi_telefonos.html"-->
+
+        <!--#include file="ssi_footer.html"-->
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

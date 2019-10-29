@@ -1,0 +1,528 @@
+// CROSS
+
+// @font-face {
+//     font-family: 'Gotham Rounded';
+//     src: url('../../fonts/GothamRounded-Medium.woff2') format('woff2'),
+//          url('../../fonts/GothamRounded-Medium.woff') format('woff');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-BoldItalic.woff2') format('woff2'),
+    url('../fonts/GothamRounded-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded Book';
+    src: url('../fonts/GothamRounded-BookItalic.woff2') format('woff2'),
+    url('../fonts/GothamRounded-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-MediumItalic.woff2') format('woff2'),
+    url('../fonts/GothamRounded-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-Medium.woff2') format('woff2'),
+    url('../fonts/GothamRounded-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-Light.woff2') format('woff2'),
+    url('../fonts/GothamRounded-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-Bold.woff2') format('woff2'),
+    url('../fonts/GothamRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-LightItalic.woff2') format('woff2'),
+    url('../fonts/GothamRounded-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded Book';
+    src: url('../fonts/GothamRounded-Book.woff2') format('woff2'),
+    url('../fonts/GothamRounded-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+	margin-top: 73px;
+    font-family: $textFontDefault;
+}
+
+a {
+    color: $colorBrandDefault;
+    &:hover {
+        text-decoration: none;
+        color: darken($colorBrandDefault,5%);
+    }
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    &.cnt_info {
+        &:hover {
+            background-color: $colorBrandDefault !important;
+        }
+        p {
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            margin: 29px 0;
+            font-weight: 400;
+            i {
+                margin-right: 8px;
+                font-size: 23px;
+                &:before {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    & > .row {
+        margin: 0px;
+    }
+    &.cnt_slider {
+        padding-bottom: 0px;
+        .container-fluid{
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    &.cnt_info, &.cnt_mapa, &.cnt_header {
+        padding: 0;
+    }
+    .destacado {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        .linea:before {
+            content: "";
+            position: relative;
+            background: #008e8c;
+            height: 1px;
+            display: block;
+            top: 10px;
+        }
+        p {
+            font-size: 19px;
+            line-height: 1.5;
+            color: $colorBrandDefault;
+            margin-bottom: 5px;
+        }
+    }
+    &.cnt_mapa {
+        height: 500px;
+        .container-fluid{
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    &.cnt_telefonos {
+        background-image: linear-gradient(to right, #008e8c, #06bfaa);
+        ul {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 0;
+            li:first-child {
+                padding-right: 36px;
+                list-style: none;
+                border-right: 2px solid white;
+            }
+            li:last-child {
+                padding-left: 36px;
+                list-style: none;
+            }
+        }
+        h6 {
+            margin-bottom: 60px;
+        }
+        padding-bottom: 50px;
+    }
+    &[class*="cnt_header"] {
+        margin-top: 120px;
+        margin-bottom: 70px;
+        width: 100%; 
+        background-color: #34beb9 !important;
+        background-position: center center;
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        position: relative;
+        padding: 0;
+        [class*="col"] {
+            max-width: 530px !important;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 50%;
+            padding: 50px;
+            position: relative;
+            top: 50px;
+            border-bottom: 5px solid rgba($colorBrandDefault, 0.4);
+            z-index: 1;
+            -webkit-box-shadow: -5px 3px 25px 0 rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: -5px 3px 25px 0 rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: -5px 3px 25px 0 rgba(0, 0, 0, 0.1);
+            -o-box-shadow: -5px 3px 25px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: -5px 3px 25px 0 rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: $colorBrandDefault;
+            margin-bottom: 22px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    &.cnt_header_quienes_somos {
+        background-image: url(../images/quienes-somos-portada.jpg);
+    }
+    &.cnt_header_emergencias {
+        background-image: url(../images/emergencias-portada.jpg);
+    }
+    &.cnt_header_planes {
+        background-image: url(../images/planes-portada.jpg);
+    }
+    &.cnt_header_contacto {
+        background-image: url(../images/contacto-portada.jpg);
+    }
+    &.cnt_header_cartilla {
+        background-image: url(../images/cartilla-medica-portada.jpg);
+    }
+    &.cnt_header_blog {
+        background-image: url(../images/blog-portada.jpg);
+    }
+    &.cnt_emergencias, &.cnt_quienes_somos, &.cnt_planes, &.cnt_blog_in {
+        .destacado {
+            margin-bottom: 0px;
+        }
+    }
+    &.cnt_quienes_somos, &.cnt_blog_in  {
+        .destacado {
+            p {
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    &.cnt_virtudes {
+        padding-top: 0px;
+        .container-fluid div {
+            background-image: url(../images/quienes-somos-compromiso.jpg);
+            width: 100%; 
+            background-color: #34beb9 !important;
+            background-position: center center;
+            background-repeat: repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            position: relative;
+            height: 300px;
+        }
+        #compromiso {
+            p:last-child {
+                margin-top: 90px;
+            }
+        }
+    }
+    &.cnt_planes, &.cnt_contacto {
+        .destacado {
+            margin-top: 0px;
+        }
+        form {
+            margin-top: 60px;
+            button {
+                padding: 17px !important;
+            }
+        }
+    }
+    &.cnt_contacto {
+        h3 {
+            color: $colorBrandDefault;  
+            margin-bottom: 5px;          
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 35px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        form {
+            background-color: #fff;
+            box-shadow: -5px 3px 25px 0 rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            margin-top: 0;
+            margin-bottom: 29px;
+            textarea {
+                height: 155px;
+            }
+            & + p {
+                font-weight: 400;
+                color: rgba($colorGrayDefault,0.7);
+                padding-left: 20px;
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+    &.cnt_blog_in {
+        span {
+            display: block;
+            text-align: center;
+            line-height: 1;
+            color: $colorGrayDefault;
+            &:first-child {
+                font-size: 64px;
+                margin-top: 25px;
+            }
+            &:last-child {
+                font-size: 36px;
+            }
+        }
+        .paginacion {
+            padding: 15px 0;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;}
+        }
+        .destacado {
+            img {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+
+// BACKGROUND
+
+.bg-light {
+    background-color: map-get($colorGray, moreThanLighten);
+}
+
+.bg-primary {
+    background-color: $colorBrandDefault !important;
+}
+
+.bg-dark {
+    background-color: map-get($colorGray, darken);
+}
+
+
+// MEDIA OBJECT
+
+.telefonos {
+    i {
+        font-size: 44px;
+    }
+    h5 {
+        margin: 0;
+        line-height: 1;
+    }
+    span {
+        font-size: 25px;
+    }
+}
+
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 1px;
+    ul {
+        list-style: none;
+        padding-left:0;
+        font-weight: 200;
+        margin-top: 40px;
+        li {
+            margin-top: 30px;
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+    h3 {
+        text-transform: uppercase;
+    }
+    h3:after {
+        content: "";
+        position: relative;
+        background: $colorBrandDefault;
+        height: 3px;
+        width: 32px;
+        display: block;
+        top: 14px;
+    }
+    .planes li {
+        margin-top: 0;
+    }
+    .form-control {
+        border: none;
+    }
+    hr {
+        border-top: solid 1px $colorGrayDefault;
+    }
+    .derechos {
+        text-align: center;
+        p {
+            padding-top: 3px;
+            color: map-get($colorGray, light);
+        }
+    }
+}
+
+
+#clamp2, #clamp3, #clamp4 {
+    margin-left: 70px;
+    bottom: 50px;
+    position: absolute;
+    padding-right: 19px;
+}
+
+@media (max-width: 575.98px) {
+    section {
+        padding-bottom: 20px;
+        .destacado {
+            .linea {
+                margin-bottom: 50px;
+                &:before {
+                    width: 20%;
+                }
+            }
+        }
+        &.cnt_telefonos {
+            ul {
+                display: block;
+                li:first-child {
+                    padding-right: 0;
+                }
+                li:last-child {
+                    padding-left: 0;
+                    margin-top: 100px;
+                    border-top: 2px solid white;
+                    padding-top: 60px;
+                }
+            }
+            h6 {
+                font-size: 40px;
+            }
+        }
+        &.cnt_slider{
+            .carousel {
+                & > div {
+                    height: 260px;
+                    .carousel-item {
+                        height: 100%;
+                        img {
+                            height: 100%;
+                            width: auto !important;
+                        }
+                    }
+                }
+
+            }
+        }
+        &.cnt_blog_in  {
+            span {
+                text-align: left;
+            }
+        }
+        &.cnt_info {
+            p {
+                font-size: 13px;
+            }
+        }
+        &.cnt_services {
+            .destacado {
+                a {
+                    float: none !important;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        h3:after {
+            left: calc(50% - 16px);
+        }
+        div {
+            margin-bottom: 40px;
+        }
+    }
+
+    [class*="cnt_header"] {
+        h1 {
+            font-size: 30px;
+        }
+        margin-top: 0px !important;
+        [class*="col"] {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    section {
+        &.cnt_planes {
+            button {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    section {
+        &.cnt_contacto {
+            .col-lg-5 {
+                margin-bottom: 30px;
+            }
+        }
+        &.cnt_services, &.cnt_valor, &.cnt_blog {
+            .destacado {
+                div:nth-of-type(3) {
+                    text-align: center;
+                    button {
+                        float: none !important;
+                        margin-top: 40px;
+                    }
+                }                
+            }
+        }
+    }
+}

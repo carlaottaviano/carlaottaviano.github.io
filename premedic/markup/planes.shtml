@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<!--#include file="ssi_head.html"-->
+
+<body>
+    <main>
+
+        <!--#include file="ssi_header.html"-->
+
+        <section class="cnt_header_planes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>PreMedic<br>Planes</h1>
+                        <p>Acceso a los más reconocidos centros médicos para urgencias e internación para cada plan médico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cnt_planes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Cotizar Plan de Salud</h2>
+                    </div>
+                </div>
+                <div class="destacado">
+                    <div class="linea">
+                    </div>
+                </div>
+                <div>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-4 offset-lg-2 col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre y apellido *">
+                                <input type="text" class="form-control" placeholder="Email *">
+                                <input type="text" class="form-control" placeholder="Teléfono *">
+                                <select class="form-control" id="grupo_familiar" required>
+                                    <option value="" hidden>Grupo Familiar *</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <select class="form-control" id="edades" required>
+                                    <option value="" hidden>Edades *</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <select class="form-control" id="afiliacion" required>
+                                    <option value="" hidden>Forma de afiliación *</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <select class="form-control" id="sucursal" required>
+                                    <option value="" hidden>Sucursal más próxima *</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <select class="form-control" id="conocio" required>
+                                    <option value="" hidden>Cómo nos conoció *</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <input type="text" class="form-control" placeholder="Información Adicional">
+                                <button type="button" class="btn btn-primary btn float-right">Buscar</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 offset-lg-2 col-md-6">
+                                <p>Campos obligatorios (*)</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--#include file="ssi_mapa.html"-->
+
+        <!--#include file="ssi_telefonos.html"-->
+
+        <!--#include file="ssi_footer.html"-->
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

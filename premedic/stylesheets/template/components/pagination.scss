@@ -1,0 +1,15 @@
+.pagination {
+	.page-item {
+		.page-link {
+			color: $colorGrayDefault;
+			font-size: 18px;
+			font-weight: 500;
+			padding: 10px;
+			background-color: map-get($colorGray, moreLighten);
+			&:hover, &:active {
+				background-color: $colorBrandDefault;
+				color: #fff;
+			}
+		}
+	}
+}

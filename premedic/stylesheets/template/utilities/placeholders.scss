@@ -1,0 +1,44 @@
+//utilities - PLACEHOLDERS
+
+%clear{
+    &:after{
+        content:"";
+        display: block;
+        clear: both;
+    }
+}
+
+%icon{
+	font-size: 0;
+	text-align: center;
+	font-style: italic;
+	color: map-get($colorGray, lighten);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+%line{
+	background-color: map-get($colorBrand, light);
+	opacity: 0;
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	transform: scalex(calc(10/300));
+}
+
+%label{
+	transform-origin: 0px 0px;
+	bottom: 0;
+	color: map-get($colorGray, light);
+	left: 0;
+	right: 0;
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	top: 24px;
+	width: 100%;
+	//overflow: hidden;
+	//white-space: nowrap;
+	text-align: left;
+}

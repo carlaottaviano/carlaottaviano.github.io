@@ -1,0 +1,79 @@
+//utilities - VARIABLES
+
+// COLORS
+// --------------------------------------------------
+$colorGrayDefault: 		#595959;
+$colorGray: (
+	moreDarken: 		#000000,
+	darken: 			#181818,
+	dark: 				#353535,
+	default: 			$colorGrayDefault,
+	light: 				#bdbcbc,
+	lighten: 			#d8d8d7,
+	moreLighten: 		#e2e2e2,
+	moreLighten2:		#f1f1f1,
+	moreThanLighten: 	#f7f8f8
+);
+
+$colorBrandDefault: 	#008e8c;
+$colorBrand: (
+	default: 			$colorBrandDefault,
+	light: 				#06bfaa,
+);
+
+// $colorDangerDefault:	#BF262E;
+// $colorSuccessDefault:	#4CA944;
+// $colorWarningDefault:	#F1B300;
+// $colorUI: (
+//     dangerDark: 	darken($colorDangerDefault, 10%),
+//     danger: 		$colorDangerDefault,
+//     dangerLight: 	lighten($colorDangerDefault, 40%),
+//     successDark: 	darken($colorSuccessDefault, 10%),
+// 	success: 		$colorSuccessDefault,
+//     successLight: 	lighten($colorSuccessDefault, 40%),
+//     warningDark: 	darken($colorWarningDefault, 10%),
+//     warning: 		$colorWarningDefault,
+//     warningLight: 	lighten($colorWarningDefault, 34%),
+// );
+
+
+// TEXT
+// --------------------------------------------------
+$text: (
+	xs1: 		0.625rem,
+	xs2: 		0.75rem,
+	sm: 		0.875rem,
+	default: 	1rem,
+	lg: 		1.125rem,
+	xl1: 		1.8rem,
+	xl2: 		1.94rem
+);
+$textFontDefault: 'Gotham Rounded';
+$textFontSizeDefault: 15px;
+
+
+// DEVICE
+// --------------------------------------------------
+$device: (
+  xs: 0,// Extra small screen / phone
+  sm: 576px,// Small screen / phone
+  md: 768px,// Medium screen / tablet
+  lg: 992px,// Large screen / desktop
+  xl: 1200px,// Extra large screen / wide desktop
+  xxl: 1366px,// 720p
+  fhd: 1920px,// Full HD 1080p
+  rt: 2560px,// Retina 1440p
+  rt15: 2880px,// 15" Retina
+  uhd: 3840px,// UHD
+  4k: 4096px,// 4k
+  8k: 8192px// 8K
+);
+
+
+// OTHERS
+// --------------------------------------------------
+// $gutterPadding: 15px;
+// $borderRadiusIcon: map-get($size, xs1);
+// $borderRadiusGral: map-get($size, sm2);
+// $borderRadiusBg: 40% 50px;
+// $ctlBorder: 1px solid map-get($colorGray, light);

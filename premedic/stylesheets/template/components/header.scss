@@ -1,0 +1,131 @@
+// LOGO
+
+.navbar {
+	background-color: #fff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+	padding: 0;
+	.navbar-brand {
+		padding-top: 24px;
+		padding-bottom: 21px;
+		margin-left: 24px;
+		margin-right: 0;
+		.logo {
+			width: 132px;
+			height: 27px;
+			object-fit: contain;
+		}
+	}
+	.navbar-toggler {
+		margin-right: 15px;
+		.navbar-toggler-icon {
+			background-image: url(../images/icons/menu.svg);
+			width: 23px;
+			height: 19px;
+		}
+	}
+	.nav-item {
+		.nav-link {
+			font-weight: 500;
+			color: $colorBrandDefault;
+			text-transform: uppercase;
+			margin-left: 24px;
+			&:after {
+				content: "";
+				position: relative;
+				background: map-get($colorGray, moreLighten);
+				height: 18px;
+				width: 1px;
+				display: block;
+				float: right;
+				left: 20px;
+			}
+			&:before {
+				content: "";
+				position: relative;
+				background: transparent;
+				height: 5px;
+				width: 100%;
+				display: block;
+				top: -23px;
+			}
+			&.active, &:hover {
+				&:before {
+					background: #595959;
+					transition: background 0.5s ease-out;
+				}
+			}
+		}
+		&:last-child {
+			.nav-link {
+				&:after {
+					content: none;
+				}
+			}			
+		}
+		&:first-child {
+			.nav-link {
+				margin-left: 13px;
+			}			
+		}
+	}
+	button {
+		margin-right: 24px;
+		i {
+			font-size: 13px;
+			margin-left: 5px;
+		}
+	}
+}
+
+.top_bar {
+	background-color: $colorGrayDefault;
+	padding: 15px 0;
+	padding-left: 24px;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		margin-left: -25px;
+		margin-bottom: 0px;
+		li {
+			flex: 0 0 auto;
+			padding-right: 20px;
+			font-size: 80%;
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.navbar .nav-item .nav-link {
+		&:hover:before, &.active:before {
+			background: transparent;
+		}
+		margin-left: 0 !important;
+	}
+	.navbar-collapse {
+		background-color: map-get($colorGray, moreThanLighten);
+		padding: 24px;
+	}		
+}
+
+@media (max-width: 575.98px) {
+	.top_bar {
+		// ul {
+		// 	display: block;
+		// 	li:first-child {
+		// 		margin-bottom: 10px;
+		// 	}
+		// }
+		display: none;
+	}
+	section {
+		&.cnt_slider {
+			padding-top: 0px;
+		}
+	}
+}
+
