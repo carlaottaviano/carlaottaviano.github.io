@@ -9342,28 +9342,39 @@ a .card:hover .image--grayscale {
 
 .section__slider .carousel .carousel-item {
   height: 425px;
+  background-image: url(../assets/images/slider-default.png);
   background-position: center; }
-  .section__slider .carousel .carousel-item.carousel-item__bg--1 {
-    background-image: url(../assets/images/slider-oil-and-gas.png); }
-  .section__slider .carousel .carousel-item.carousel-item__bg--2 {
-    background-image: url(../assets/images/slider-petroquimica.png); }
-  .section__slider .carousel .carousel-item.carousel-item__bg--3 {
-    background-image: url(../assets/images/slider-mineria.png); }
   .section__slider .carousel .carousel-item img {
     height: 425px;
-    width: auto !important; }
+    object-fit: cover;
+    object-position: center;
+    animation: opacity 2s linear; }
   .section__slider .carousel .carousel-item .carousel-caption {
-    bottom: 90px; }
+    right: auto;
+    text-align: left;
+    top: 0;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center; }
+    @media (max-width: 767.98px) {
+      .section__slider .carousel .carousel-item .carousel-caption {
+        text-align: center;
+        align-items: center;
+        right: 15%;
+        max-width: 100%; } }
   .section__slider .carousel .carousel-item h1 {
     color: #fff;
     padding-bottom: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 2.5rem; }
     .section__slider .carousel .carousel-item h1::after {
       display: none; }
   .section__slider .carousel .carousel-item p {
     font-size: 1.66667rem; }
   .section__slider .carousel .carousel-item .btn {
-    margin: auto; }
+    width: fit-content; }
   .section__slider .carousel .carousel-item .card {
     margin-bottom: 0; }
 
@@ -9382,6 +9393,12 @@ a .card:hover .image--grayscale {
     text-indent: initial; }
     #carouselThumbnail .carousel-indicators > li.active img {
       opacity: 0.7; }
+
+@keyframes opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .list-group .list-group-item-action:hover {
   color: #b9651b; }
